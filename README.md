@@ -9,7 +9,7 @@ The MegaCommand Shield accesses the ATMega2560 processor on board the ArduinoMeg
 
 MegaCommand pin changes from original MiniCommand are as followed:
 
-MicroSD board -
+MicroSD board:
 
 CS pin is now PL6
 
@@ -19,7 +19,7 @@ PL0 = OUT
 PL1 = SHIFT
 PL2 = CLK
 
-HD44780 LCD Circuit -
+HD44780 LCD Circuit:
 
 E = PL4
 R/S = PL3
@@ -29,7 +29,7 @@ LEDs -
 PE5 = LED0
 PE4 = LED1
 
-MIDI -
+MIDI:
 
 TXD0 and RXD0 (USART0) are reserved for Arduino USB interface.
 
