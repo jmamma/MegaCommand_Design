@@ -1,17 +1,18 @@
 The MegaCommand shield was designed to be backwards compatible with the original MiniCommand hardware. 
 
-There are however notable differences between the two, including new pin assignments which must be taken account for when using the original MidiCtrl libraries.
+However, there are notable differences between the two systems, including new pin assignments which must be taken account for when using the original MidiCtrl libraries.
 
-The original MiniCommand used the ATMega64 microprocessor whilst the MegaCommand Shield is built on top of the ATMega2560. The ATMega2560 shares a mostly identical pin layout to the ATMega64 but has many more additional pins. 
+The original MiniCommand used the ATMega64 microprocessor whilst the MegaCommand Shield is built on top of ArduinoMega which uses the ATMega2560 processor. The ATMega2560 shares most of the IO functionality of the ATMega64 but has many more additional pins, and a differernt pin-to-port layout.
 
 The MegaCommand Shield accesses the ATMega2560 processor on board the ArduinoMega through the exposed jumpers, not all pins on the ATMega2560 are exposed through this Arduino interface.
 
+Incorporating the differences between both processors and subsequent pin availability the following pin assignment has been made as the best possible substitutes for the original hardware layout.
 
 MegaCommand pin changes from original MiniCommand are as followed:
 
 MicroSD board:
 
-CS pin is now PL6
+PL6 = CS
 
 Key Scanning: Shift Registor Circuit
 
@@ -24,7 +25,7 @@ HD44780 LCD Circuit:
 E = PL4
 R/S = PL3
 
-LEDs -
+LEDs:
 
 PE5 = LED0
 PE4 = LED1
