@@ -14,7 +14,7 @@ MicroSD board:
 
 PL6 = CS
 
-Key Scanning: Shift Registor Circuit
+Key Scanning (Shift Registor Circuit):
 
 PL0 = OUT
 PL1 = SHIFT
