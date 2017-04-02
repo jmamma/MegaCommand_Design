@@ -12,7 +12,11 @@ MegaCommand pin changes from original MiniCommand are as followed:
 
 MicroSD board:
 
-PL6 = CS
+CS = PB0
+
+SRAM
+
+BankSel = PL6
 
 Key Scanning (Shift Registor Circuit):
 
