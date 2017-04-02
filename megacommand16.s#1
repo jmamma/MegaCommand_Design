@@ -15096,14 +15096,8 @@ DPDT SMT slide switch, AYZ0202, SWCH-08179</description>
 <net name="PB0" class="0">
 <segment>
 <pinref part="XIO" gate="A" pin="34"/>
-<wire x1="17.78" y1="86.36" x2="-10.16" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="86.36" x2="-12.7" y2="86.36" width="0.1524" layer="91"/>
 <label x="-1.905" y="86.995" size="1.778" layer="95"/>
-<pinref part="JP1" gate="G$1" pin="7"/>
-<wire x1="-10.16" y1="86.36" x2="-12.7" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="0" y1="137.16" x2="-27.94" y2="137.16" width="0.1524" layer="91"/>
-<label x="-17.78" y="137.16" size="1.778" layer="95"/>
-<wire x1="-27.94" y1="137.16" x2="-27.94" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="-27.94" y1="86.36" x2="-12.7" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PG0" class="0">
@@ -15262,9 +15256,13 @@ DPDT SMT slide switch, AYZ0202, SWCH-08179</description>
 <label x="34.29" y="145.415" size="1.778" layer="95"/>
 </segment>
 <segment>
+<pinref part="JP1" gate="G$1" pin="7"/>
+<wire x1="0" y1="137.16" x2="-27.94" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="-27.94" y1="137.16" x2="-27.94" y2="73.66" width="0.1524" layer="91"/>
 <label x="-1.905" y="74.295" size="1.778" layer="95"/>
 <pinref part="XIO" gate="A" pin="24"/>
 <wire x1="-27.94" y1="73.66" x2="17.78" y2="73.66" width="0.1524" layer="91"/>
+<label x="-17.78" y="137.16" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PL7" class="0">
@@ -16476,18 +16474,18 @@ DPDT SMT slide switch, AYZ0202, SWCH-08179</description>
 <label x="71.12" y="15.24" size="1.778" layer="95"/>
 </segment>
 </net>
+<net name="PB0" class="0">
+<segment>
+<pinref part="U1" gate="A" pin="A16"/>
+<wire x1="83.82" y1="7.62" x2="71.12" y2="7.62" width="0.1524" layer="91"/>
+<label x="71.12" y="7.62" size="1.778" layer="95"/>
+</segment>
+</net>
 <net name="PC7" class="0">
 <segment>
 <pinref part="U1" gate="A" pin="A15"/>
 <wire x1="83.82" y1="5.08" x2="71.12" y2="5.08" width="0.1524" layer="91"/>
 <label x="71.12" y="5.08" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="PL6" class="0">
-<segment>
-<pinref part="U1" gate="A" pin="A16"/>
-<wire x1="83.82" y1="7.62" x2="71.12" y2="7.62" width="0.1524" layer="91"/>
-<label x="71.12" y="7.62" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
