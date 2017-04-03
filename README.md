@@ -1,5 +1,16 @@
 # MegaCommand
 
+## Description:
+
+The MegaCommand is an Arduino Mega MIDI shield. 
+
+4 Midi ports (2 in, 2 out)
+4 Rotary Encoders + Push button
+4 Buttons
+1 LCD display
+128KBytes of SRAM (0-63KB accessible natively, 64-128KB accessible with bank selection)
+1 USB
+
 ## Project Status:
 
 - Final PCBs 1_0_0c gerbers have been generated and are being fabricated.
