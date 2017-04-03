@@ -39,6 +39,12 @@ STL files for both the enclosure body and lid are provided in this git repositor
 ## PCB Fabrication:
 [PCBWay.com fabrication options](https://github.com/jmamma/MegaCommand_Design/blob/master/pcb_fabrication_preferences.jpg)
 
+Gerber files (pcb layout diagrams used for fabrication) are included in the ./gerber/ directory above.
+
+Download gerbers and submit to PCB manufacturer.
+
+Circuit Schematic and Board Layout is present in Eagle files.
+
 ## About:
 
 The MegaCommand shield was designed to be backwards compatible with the original MiniCommand hardware. 
