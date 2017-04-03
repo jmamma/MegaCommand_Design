@@ -1,6 +1,20 @@
+MegaCommand
 
-Bill of Materials:
+Project Status:
+
+- Final PCBs 1_0_0c gerbers have been generated and are being fabricated.
+- Parts selection finalized.
+
+- No guarantee that anything works until latest PCB design fully assembled on my end and tested.
+- Sub systems (SD Card, Midi LCD, SRAM) have only been tested with the Arduino libraries, the MIDICtrl framework still needs a core written for the new hardware).
+
+
+Parts:
 [Bill of Materials:](https://htmlpreview.github.io/?https://raw.githubusercontent.com/jmamma/MegaCommand_Design/master/megacommand_1_0_0c_bill_of_materials.htm)
+
+PCB Fabrication:
+[PCBWay.com fabrication options:](https://github.com/jmamma/MegaCommand_Design/blob/master/pcb_fabrication_preferences.jpg)
+
 
 The MegaCommand shield was designed to be backwards compatible with the original MiniCommand hardware. 
 
