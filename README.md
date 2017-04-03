@@ -1,6 +1,6 @@
-MegaCommand
+# MegaCommand
 
-Project Status:
+## Project Status:
 
 - Final PCBs 1_0_0c gerbers have been generated and are being fabricated.
 - Parts selection finalized.
@@ -9,12 +9,13 @@ Project Status:
 - Sub systems (SD Card, Midi LCD, SRAM) have only been tested with the Arduino libraries, the MIDICtrl framework still needs a core written for the new hardware).
 
 
-Parts:
+## Parts:
 [Bill of Materials](https://htmlpreview.github.io/?https://raw.githubusercontent.com/jmamma/MegaCommand_Design/master/megacommand_1_0_0c_bill_of_materials.htm)
 
-PCB Fabrication:
+## PCB Fabrication:
 [PCBWay.com fabrication options](https://github.com/jmamma/MegaCommand_Design/blob/master/pcb_fabrication_preferences.jpg)
 
+## About:
 
 The MegaCommand shield was designed to be backwards compatible with the original MiniCommand hardware. 
 
@@ -25,6 +26,14 @@ The original MiniCommand used the ATMega64 microprocessor whilst the MegaCommand
 The MegaCommand Shield accesses the ATMega2560 processor on board the ArduinoMega through the exposed jumpers, not all pins on the ATMega2560 are exposed through this Arduino interface.
 
 Incorporating the differences between both processors and subsequent pin availability the following pin assignment has been made as the best possible substitutes for the original hardware layout.
+
+## MegaCommand vs MiniCommand
+
+4 Midi Ports vs 3
+256k ROM vs 64K
+USB vs No USB
+
+--
 
 MegaCommand pin changes from original MiniCommand are as followed:
 
