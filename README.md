@@ -1,3 +1,7 @@
+
+Bill of Materials:
+[Bill of Materials:](https://htmlpreview.github.io/?https://raw.githubusercontent.com/jmamma/MegaCommand_Design/master/megacommand_1_0_0c_bill_of_materials.htm)
+
 The MegaCommand shield was designed to be backwards compatible with the original MiniCommand hardware. 
 
 However, there are notable differences between the two systems, including new pin assignments which must be taken account for when using the original MidiCtrl libraries.
