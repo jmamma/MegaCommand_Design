@@ -9,8 +9,19 @@
 - Sub systems (SD Card, Midi LCD, SRAM) have only been tested with the Arduino libraries, the MIDICtrl framework still needs a core written for the new hardware).
 
 
+__ALL INFORMATION BELOW IS PROVIDED AS A CONVENIENCE AND COULD BE SUBJECT TO ERROR OR CHANGE.
+
 ## Parts:
 [Bill of Materials](https://htmlpreview.github.io/?https://raw.githubusercontent.com/jmamma/MegaCommand_Design/master/megacommand_1_0_0c_bill_of_materials.htm)
+
+[Mouser Cart (incomplete)](http://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=189ae378fa)
+Some of these components can be sourced cheaper than at mouser, so I would recommend doing your own shopping.
+Also, the cart is incomplete, components such as LCD and SD Card breakout need to be purchased from Adafruit.
+
+
+## Enclosure:
+
+STL files for both the enclosure body and lid are provided in this git repository. The files are ready to print.
 
 ## PCB Fabrication:
 [PCBWay.com fabrication options](https://github.com/jmamma/MegaCommand_Design/blob/master/pcb_fabrication_preferences.jpg)
