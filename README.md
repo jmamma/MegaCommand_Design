@@ -10,10 +10,10 @@ Project Status:
 
 
 Parts:
-[Bill of Materials:](https://htmlpreview.github.io/?https://raw.githubusercontent.com/jmamma/MegaCommand_Design/master/megacommand_1_0_0c_bill_of_materials.htm)
+[Bill of Materials](https://htmlpreview.github.io/?https://raw.githubusercontent.com/jmamma/MegaCommand_Design/master/megacommand_1_0_0c_bill_of_materials.htm)
 
 PCB Fabrication:
-[PCBWay.com fabrication options:](https://github.com/jmamma/MegaCommand_Design/blob/master/pcb_fabrication_preferences.jpg)
+[PCBWay.com fabrication options](https://github.com/jmamma/MegaCommand_Design/blob/master/pcb_fabrication_preferences.jpg)
 
 
 The MegaCommand shield was designed to be backwards compatible with the original MiniCommand hardware. 
