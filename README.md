@@ -21,7 +21,9 @@ Also, the cart is incomplete, components such as LCD and SD Card breakout need t
 
 ## Enclosure:
 
-STL files for both the enclosure body and lid are provided in this git repository. The files are ready to print.
+The enclosure is based on a standard 1590BB guitar pedal enclousre.
+
+STL files for both the enclosure body and lid are provided in this git repository. The files can be 3D printed or you can investigate having an aluminium enclosure CNC milled.
 
 ## PCB Fabrication:
 [PCBWay.com fabrication options](https://github.com/jmamma/MegaCommand_Design/blob/master/pcb_fabrication_preferences.jpg)
