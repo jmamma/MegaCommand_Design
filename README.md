@@ -6,7 +6,7 @@
 - Parts selection finalized.
 
 - No guarantee that anything works until latest PCB design fully assembled on my end and tested.
-- Sub systems (SD Card, Midi LCD, SRAM) have only been tested with the Arduino libraries, the MIDICtrl framework still needs a core written for the new hardware).
+- Sub systems (SD Card, MIDI, LCD, SRAM) have only been tested with the Arduino libraries, the MIDICtrl framework still needs a core written for the new hardware).
 
 
 __ALL INFORMATION BELOW IS PROVIDED AS A CONVENIENCE AND COULD BE SUBJECT TO ERROR OR CHANGE.
