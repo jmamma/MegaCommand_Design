@@ -2,7 +2,7 @@
 
 ## Description:
 
-The MegaCommand is an Arduino Mega MIDI shield. 
+The MegaCommand is an Arduino Mega compatible MIDI shield. 
 
 4 Midi ports (2 in, 2 out)
 4 Rotary Encoders + Push button
