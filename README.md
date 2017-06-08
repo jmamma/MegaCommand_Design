@@ -25,7 +25,7 @@ The MegaCommand is an Arduino Mega compatible MIDI shield.
 __ALL INFORMATION BELOW IS PROVIDED AS A CONVENIENCE AND COULD BE SUBJECT TO ERROR OR CHANGE.
 
 ## Parts:
-[Bill of Materials](https://htmlpreview.github.io/?https://raw.githubusercontent.com/jmamma/MegaCommand_Design/master/megacommand_1_0_0c_bill_of_materials.htm)
+[Bill of Materials](https://docs.google.com/spreadsheets/d/1SPOctEUJUs_R-fi7xMjIrdiOk7FmjT5jRd9NrTtHMDI/edit?usp=sharing)
 
 [Mouser Cart (not a full list of materials)](http://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=2b75db3eab)
 Some of these components can be sourced cheaper than at mouser, so I would recommend doing your own shopping.
