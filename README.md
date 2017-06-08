@@ -13,10 +13,12 @@ The MegaCommand is an Arduino Mega compatible MIDI shield.
 
 ## Project Status:
 
-- Final PCBs 1_0_0c gerbers have been generated and are being fabricated.
+- Final PCBs 1_0_1 gerbers have been generated and are being fabricated for testing.
+
 - Parts selection finalized.
 
 - No guarantee that anything works until latest PCB design fully assembled on my end and tested.
+
 - Sub systems (SD Card, MIDI, LCD, SRAM) have only been tested with the Arduino libraries, the MIDICtrl framework still needs a core written for the new hardware).
 
 
