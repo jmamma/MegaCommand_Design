@@ -32,7 +32,7 @@ __ALL INFORMATION BELOW IS PROVIDED AS A CONVENIENCE AND COULD BE SUBJECT TO ERR
 [Bill of Materials](https://docs.google.com/spreadsheets/d/1SPOctEUJUs_R-fi7xMjIrdiOk7FmjT5jRd9NrTtHMDI/edit?usp=sharing)
 
 [Mouser Cart (not a full list of materials)](
-http://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=0da6bd7cc3)
+http://au.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=6c1d05feae)
 Some of these components can be sourced cheaper than at mouser, so I would recommend doing your own shopping.
 Also, the cart is incomplete, components such as LCD and SD Card breakout need to be purchased from Adafruit or alternative.
 
