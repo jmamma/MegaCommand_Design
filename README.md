@@ -39,6 +39,9 @@ Also, the cart is incomplete, components such as LCD and SD Card breakout need t
 
 The MegaCommand board has support for 2 display types.
 
+Only the HD44780 display is working with the MIDICtrl library and MCLive firmware at this stage.
+Porting the display libraries over to OLED is planned for a later release. Users can choose to upgrade the display at a later stage.
+
 1) HD44870 LCD is the original LCD used in the MiniCommand and compatible with the LCD libraries.
 2) OLED 128x32 display is a new display of similar size but with fully customizable display capable of 4 lines of text and custom  graphics, it uses the SPI bus. (OLED display requires resistor position changes to enable SPI mode as per adafruit documentation https://learn.adafruit.com/2-3-monochrome-128x32-oled-display-module/assembly-1):
 
