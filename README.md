@@ -13,17 +13,15 @@ The MegaCommand is an Arduino Mega compatible MIDI shield.
 
 ## Project Status:
 
-- Final PCBs 1_0_1 gerbers have been generated and are being fabricated for testing.
+- Final PCBs 1_0_1 gerbers have been tested and built
 
 - Parts selection finalized.
 
-- No guarantee that anything works until latest PCB design fully assembled on my end and tested.
+- Sub systems (SD Card, MIDI, LCD, SRAM) have been tested with the Arduino libraries and MIDICtrl framework.
 
-- Sub systems (SD Card, MIDI, LCD, SRAM) have been tested with the Arduino libraries.
+- An arduino core for the ArduinoMega has been written and tested. MidiCtrl 20 has been modified to run on the ArduinoMega and compile in the Arduino IDE. The MCLive firmware is running successfully on the MegaCommand. 
 
-- An arduino core for the ArduinoMega has been written and tested. MidiCtrl 20 has been modified to run on the ArduinoMega and compile in the Arduino IDE. The MCL firmware is running successfully on the MegaCommand. 
-
-- Compile errors for Wesen's firmwares. 
+- Compile errors for Wesen's firmwares. Only MCLive firmware compiles at this time.
 
 
 __ALL INFORMATION BELOW IS PROVIDED AS A CONVENIENCE AND COULD BE SUBJECT TO ERROR OR CHANGE.
@@ -42,6 +40,16 @@ The MegaCommand board has support for 2 display types.
 
 1) HD44870 LCD is the original LCD used in the MiniCommand and compatible with the LCD libraries.
 2) OLED 128x32 display is a new display of similar size but with fully customizable display capable of 4 lines of text and custom  graphics, it uses the SPI bus.
+
+## Build 
+
+Videos detailing the build process (annotations to follow).
+
+MegaCommand 1.0.1a:
+https://www.youtube.com/edit?o=U&video_id=15qRWJqVOe8
+
+Optional OLED display install:
+https://www.youtube.com/edit?o=U&video_id=Sr32vFOjeSc
 
 ## Enclosure:
 
