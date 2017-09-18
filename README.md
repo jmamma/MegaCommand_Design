@@ -90,7 +90,7 @@ Once you've built a MegaCommand you can write sketches within the Arduino IDE to
 Before you start coding you need to decide which core you are going to use.
 
 ## Arduino Cores
-In ArduinoLand, a Core is a collection of initialisation functions and associated libraries, used for configuring the underlying hardware, it is analogous to an Operating System kernel.
+In ArduinoLand, a Core is a collection of initialisation functions and associated libraries, used for configuring the underlying hardware; it is analogous to an Operating System kernel.
 
 There are two cores to keep in mind:
 
