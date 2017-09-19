@@ -50,10 +50,10 @@ Porting the display libraries over to OLED is planned for a later release. Users
 Videos detailing the build process (annotations to follow).
 
 MegaCommand 1.0.1a:
-https://www.youtube.com/edit?o=U&video_id=15qRWJqVOe8
+https://www.youtube.com/watch?v=15qRWJqVOe8
 
 Optional OLED display install:
-https://www.youtube.com/edit?o=U&video_id=Sr32vFOjeSc
+https://www.youtube.com/watch?v=Sr32vFOjeSc
 
 ## Enclosure:
 
