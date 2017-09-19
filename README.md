@@ -14,7 +14,7 @@ The MegaCommand is an Arduino Mega MIDI shield that is backwards compatible with
 
 ## Project Status:
 
-- Final PCBs 1_0_1 gerbers have been tested and built
+- Final PCBs 1_0_1a gerbers have been tested and built
 
 - Parts selection finalized.
 
