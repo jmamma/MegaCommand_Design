@@ -69,20 +69,34 @@ https://github.com/jmamma/MegaCommand_Design/blob/master/megacommand_1_0_1a_bott
 
   1. ICS: RAM, Octal Latch, Shift Registers
   2. Arduino male headers. 
-  3. MEC switches (Make sure these sit completely flush with the board and are not leaning to one side)
-  4. ICS: MIDI Optocouplers, HEX buffer, DAC 
-  5. LCD Trimmer
-  6. Resistor arrays
-  7. Capacitors. (Make sure the 220uF electrolytic cap fits when the arduino is connected)
+  3. Capacitors. (Make sure the 220uF electrolytic cap fits when the arduino is connected)
+
+TEST POINT: Run the SRAM firmware test.
+
+  4. MEC switches (Make sure these sit completely flush with the board and are not leaning to one side)
+  5. ICS: MIDI Optocouplers, HEX buffer, DAC 
+  6. LCD Trimmer
+  7. Resistor arrays
   8. Resistors + diodes
-  9. Encoders (Make sure these sit completely flush with the board and are not leaning to one side)
+  9. Encoders (Make sure these sit completely flush with the board and are not leaning to one side)  
+  
+TEST POINT: Run the button and encoder test firmware.
+
  10. MIDI DIN ports. (completly remove the 2 front pins by pulling the entire piece of aluminum from the connector)
+ 
+TEST POINT: Run the MIDIPort test firmware.
+
  11. Power Jack (+9V tip)
  12. SDCard header (the female header is placed on the bottom side of the board, and the pins are soldered from the top side)
+ 
+TEST POINT: Run the SDCARD test firmware
+ 
  13. Display header HD44780 (soldered from the top side of the board, the bottom side is intentionally obstructed by MIDI ports). There are 2 display header locations, one for each display type, choose the correct one.
  14. Display HD44780 (Soldered to the display header once the header is installed, max height of display should be 1.5-2mm above mec switches (without switch cap).
  15. LEDs (+ anode pin nearest to the bottom of the board for both LEDs. )
  16. Power switch. (optional, you can solder a short between the two right most pins on EG1212B  
+ 
+TEST POINT: Run the LCD and LED test firmware.
 
 The MIDI DIN ports and display should be installed last.
 
