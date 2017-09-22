@@ -55,21 +55,15 @@ https://www.youtube.com/watch?v=15qRWJqVOe8
 Optional OLED display install:
 https://www.youtube.com/watch?v=Sr32vFOjeSc
 
-1)
 ```
-Just a reminder that the OLED display whilst tested, is not currently supported.
-
-I need to re-write all the GUI libraries to handle it.
-
-I'm currently coding everything for the original HD44780 display. The plan is to back port the 16x2 display mode to the OLED, then eventually re-write all the MCL GUI to use pixel based graphics. But this is a long way off.
-
-2) VERIFY CHIP ORIENTATION BEFORE SOLDERING.
+1) VERIFY CHIP ORIENTATION BEFORE SOLDERING.
 
 Take care in making sure the ICs are inserted the correct way around.
 
 You do not want to have to try and desolder 32 pins.
 
-3) Follow YouTube video build order 
+3) Build Order: 
+
 1. ICS: RAM, Octal Latch, Shift Registers
 2. Arduino header. 
 3. MEC switches
