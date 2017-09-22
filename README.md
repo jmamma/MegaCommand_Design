@@ -69,13 +69,13 @@ https://github.com/jmamma/MegaCommand_Design/blob/master/megacommand_1_0_1a_bott
 
 1. ICS: RAM, Octal Latch, Shift Registers
 2. Arduino header. 
-3. MEC switches
+3. MEC switches (Make sure these sit completely flush with the board and are not leaning to one side)
 4. ICS: MIDI Optocouplers, HEX buffer, DAC 
 5. LCD Trimmer
 6. Resistor arrays
 7. Capacitors
 8. Resistors + diodes
-9. Encoders
+9. Encoders (Make sure these sit completely flush with board and are not leaning to one side)
 10. MIDI DIN ports.
 11. Power Jack (+9V tip)
 12. Display
