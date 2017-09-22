@@ -78,7 +78,7 @@ https://github.com/jmamma/MegaCommand_Design/blob/master/megacommand_1_0_1a_bott
   9. Encoders (Make sure these sit completely flush with the board and are not leaning to one side)
  10. MIDI DIN ports.
  11. Power Jack (+9V tip)
- 12. SDCard header
+ 12. SDCard header (the female header is placed on the bottom side of the board, and the pins are soldered from the top side)
  13. Display
  14. LEDs (+ anode pin nearest to the bottom of the board for both LEDs. )
  15. Power switch. (optional, you can solder a short between the two right most pins on EG1212B  
