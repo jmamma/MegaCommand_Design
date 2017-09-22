@@ -68,7 +68,7 @@ https://github.com/jmamma/MegaCommand_Design/blob/master/megacommand_1_0_1a_bott
 3) Build Order: 
 
   1. ICS: RAM, Octal Latch, Shift Registers
-  2. Arduino header. 
+  2. Arduino male headers. 
   3. MEC switches (Make sure these sit completely flush with the board and are not leaning to one side)
   4. ICS: MIDI Optocouplers, HEX buffer, DAC 
   5. LCD Trimmer
@@ -76,12 +76,13 @@ https://github.com/jmamma/MegaCommand_Design/blob/master/megacommand_1_0_1a_bott
   7. Capacitors. (Make sure the 220uF electrolytic cap fits when the arduino is connected)
   8. Resistors + diodes
   9. Encoders (Make sure these sit completely flush with the board and are not leaning to one side)
- 10. MIDI DIN ports.
+ 10. MIDI DIN ports. (completly remove the 2 front pins by pulling the entire piece of aluminum from the connector)
  11. Power Jack (+9V tip)
  12. SDCard header (the female header is placed on the bottom side of the board, and the pins are soldered from the top side)
- 13. Display
- 14. LEDs (+ anode pin nearest to the bottom of the board for both LEDs. )
- 15. Power switch. (optional, you can solder a short between the two right most pins on EG1212B  
+ 13. Display header (soldered from the top side of the board, the bottom side is intentionally obstructed by MIDI ports)
+ 14. Display (Soldered to the display header once the header is installed, max height of display should be 1.5-2mm above mec switches (without switch cap).
+ 15. LEDs (+ anode pin nearest to the bottom of the board for both LEDs. )
+ 16. Power switch. (optional, you can solder a short between the two right most pins on EG1212B  
 
 The MIDI DIN ports and display should be installed last.
 
