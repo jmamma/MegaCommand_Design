@@ -55,6 +55,47 @@ https://www.youtube.com/watch?v=15qRWJqVOe8
 Optional OLED display install:
 https://www.youtube.com/watch?v=Sr32vFOjeSc
 
+1)
+```
+Just a reminder that the OLED display whilst tested, is not currently supported.
+
+I need to re-write all the GUI libraries to handle it.
+
+I'm currently coding everything for the original HD44780 display. The plan is to back port the 16x2 display mode to the OLED, then eventually re-write all the MCL GUI to use pixel based graphics. But this is a long way off.
+
+2) VERIFY CHIP ORIENTATION BEFORE SOLDERING.
+
+Take care in making sure the ICs are inserted the correct way around.
+
+You do not want to have to try and desolder 32 pins.
+
+3) Follow YouTube video build order 
+1. ICS: RAM, Octal Latch, Shift Registers
+2. Arduino header. 
+3. MEC switches
+4. ICS: MIDI Optocouplers, HEX buffer, DAC 
+5. LCD Trimmer
+6. Resistor arrays
+7. Capacitors
+8. Resistors + diodes
+9. Encoders
+10. MIDI DIN ports.
+11. Power Jack (+9V tip)
+12. Display
+13. LEDs (+ anode pin nearest to the bottom of the board for both LEDs. )
+14. Power switch. (optional, you can solder a short between the two right most pins on EG1212B location), or power the unit from USB
+
+The MIDI DIN ports and display should be installed last.
+
+The MIDI DIN ports get soldered on before the display, and require that the 2 front legs are removed from each DIN connector (don't just cut the legs, pull the entire piece of aluminium out with a pair of pliers, this will prevent shorts with the display header). Once the MiDI DIN ports are in. The header for the HD44780 display is soldered from the display side of the board; the reverse side in which you would normally solder from is intentionally obstructed by the MIDI ports.
+
+This is not ideal, but was necessary due to the space limitations of the board.
+
+4) Display height. the top of the display (OLED or HD44780) should sit no higher than 1.5-2mm above the the height of the switches (without switch cap). This should allow the display and buttons to sit nicely if you use the enclosure design.
+
+5) To install the male headers that connect to the MC to the ArduinoMega, insert the headers in to the ArduinoMega then solder with the arduino attached to the headers. This will ensure perfect alignment. See the youtube video.
+```
+
 ## Enclosure:
 
 The enclosure is based on a standard 1590BB guitar pedal enclousre.
