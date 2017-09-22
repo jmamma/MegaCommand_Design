@@ -73,7 +73,7 @@ https://github.com/jmamma/MegaCommand_Design/blob/master/megacommand_1_0_1a_bott
   4. ICS: MIDI Optocouplers, HEX buffer, DAC 
   5. LCD Trimmer
   6. Resistor arrays
-  7. Capacitors. (Make sure the 0.1uF electrolytic cap fits when the arduino is connected)
+  7. Capacitors. (Make sure the 220uF electrolytic cap fits when the arduino is connected)
   8. Resistors + diodes
   9. Encoders (Make sure these sit completely flush with the board and are not leaning to one side)
  10. MIDI DIN ports.
