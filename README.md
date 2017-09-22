@@ -79,8 +79,8 @@ https://github.com/jmamma/MegaCommand_Design/blob/master/megacommand_1_0_1a_bott
  10. MIDI DIN ports. (completly remove the 2 front pins by pulling the entire piece of aluminum from the connector)
  11. Power Jack (+9V tip)
  12. SDCard header (the female header is placed on the bottom side of the board, and the pins are soldered from the top side)
- 13. Display header (soldered from the top side of the board, the bottom side is intentionally obstructed by MIDI ports)
- 14. Display (Soldered to the display header once the header is installed, max height of display should be 1.5-2mm above mec switches (without switch cap).
+ 13. Display header HD44780 (soldered from the top side of the board, the bottom side is intentionally obstructed by MIDI ports). There are 2 display header locations for each display type, choose the correct one.
+ 14. Display HD44780 (Soldered to the display header once the header is installed, max height of display should be 1.5-2mm above mec switches (without switch cap).
  15. LEDs (+ anode pin nearest to the bottom of the board for both LEDs. )
  16. Power switch. (optional, you can solder a short between the two right most pins on EG1212B  
 
