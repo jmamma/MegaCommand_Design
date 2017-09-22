@@ -55,6 +55,9 @@ https://www.youtube.com/watch?v=15qRWJqVOe8
 Optional OLED display install:
 https://www.youtube.com/watch?v=Sr32vFOjeSc
 
+https://github.com/jmamma/MegaCommand_Design/blob/master/megacommand_1_0_1a_top_diagram.pdf
+https://github.com/jmamma/MegaCommand_Design/blob/master/megacommand_1_0_1a_bottom_diagram.pdf
+
 ```
 1) VERIFY CHIP ORIENTATION BEFORE SOLDERING.
 
