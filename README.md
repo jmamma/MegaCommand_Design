@@ -74,15 +74,15 @@ https://github.com/jmamma/MegaCommand_Design/blob/master/megacommand_1_0_1a_bott
 TEST POINT: Run the SRAM firmware test.
 
   4. MEC switches (Make sure these sit completely flush with the board and are not leaning to one side)
-  5. ICS: MIDI Optocouplers, HEX buffer, DAC 
-  6. LCD Trimmer
-  7. Resistor arrays
-  8. Resistors + diodes
-  9. Encoders (Make sure these sit completely flush with the board and are not leaning to one side)  
+  5. LCD Trimmer
+  6. Resistor arrays
+  7. Resistors + diodes
+  8. Encoders (Make sure these sit completely flush with the board and are not leaning to one side)  
   
 TEST POINT: Run the button and encoder test firmware.
-
- 10. MIDI DIN ports. (completly remove the 2 front pins by pulling the entire piece of aluminum from the connector)
+  9. ICS: MIDI Optocouplers, HEX buffer, DAC 
+  10. Resistors + diodes
+ 11. MIDI DIN ports. (completly remove the 2 front pins by pulling the entire piece of aluminum from the connector)
  
 TEST POINT: Run the MIDIPort test firmware.
 
