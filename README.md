@@ -76,18 +76,17 @@ TEST POINT: Run the SRAM firmware test.
   4. MEC switches (Make sure these sit completely flush with the board and are not leaning to one side)
   5. LCD Trimmer
   6. Resistor arrays
-  7. Resistors + diodes
-  8. Encoders (Make sure these sit completely flush with the board and are not leaning to one side)  
+  7. Encoders (Make sure these sit completely flush with the board and are not leaning to one side)  
   
 TEST POINT: Run the button and encoder test firmware.
-  9. ICS: MIDI Optocouplers, HEX buffer, DAC 
-  10. Resistors + diodes
- 11. MIDI DIN ports. (completly remove the 2 front pins by pulling the entire piece of aluminum from the connector)
+  8. ICS: MIDI Optocouplers, HEX buffer, DAC 
+  9. Resistors + diodes
+10. MIDI DIN ports. (completly remove the 2 front pins by pulling the entire piece of aluminum from the connector)
  
 TEST POINT: Run the MIDIPort test firmware.
 
  11. Power Jack (+9V tip)
- 12. SDCard header (the female header is placed on the bottom side of the board, and the pins are soldered from the top side)
+ 12. SDCard headers (the female header is placed on the bottom side of the board, and the pins are soldered from the top side. Solder male headers to the sd-card breakout board)
  
 TEST POINT: Run the SDCARD test firmware
  
