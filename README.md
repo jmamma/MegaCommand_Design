@@ -167,8 +167,6 @@ For example, the MegaCommand core is necessary for running the MCL firmware and 
 2) Get the MIDICtrl library and MegaCommand Core (same repo):
 ```
    cd ~/Applications/Arduino.app/Contents/Java/hardware/
-   mkdir megacommand
-   cd megacommand
    git clone https://github.com/jmamma/MIDICtrl20_MegaCommand
 ```
 ### Selecting the Core
