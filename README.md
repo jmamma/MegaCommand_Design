@@ -162,7 +162,7 @@ For example, the MegaCommand core is necessary for running the MCL firmware and 
 ### Installing the MIDICtrl core.
 (Instructions for OSX, should be similar for Windows)
 
-1) Download the Arduino IDE https://www.arduino.cc/en/Main/Software\
+1) Download the Arduino IDE https://www.arduino.cc/en/Main/Software (1.8.5 tested)
 
 2) Get the MIDICtrl library and MegaCommand Core (same repo):
 ```
