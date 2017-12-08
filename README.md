@@ -56,7 +56,7 @@ Optional OLED display install:
 https://www.youtube.com/watch?v=Sr32vFOjeSc
 
 ```
-1) VERIFY CHIP ORIENTATION BEFORE SOLDERING.
+VERIFY CHIP ORIENTATION BEFORE SOLDERING.
 
 Take care in making sure the ICs are inserted the correct way around.
 
@@ -65,7 +65,7 @@ You do not want to have to try and desolder 32 pins.
 https://github.com/jmamma/MegaCommand_Design/blob/master/megacommand_1_0_1a_top_diagram.pdf
 https://github.com/jmamma/MegaCommand_Design/blob/master/megacommand_1_0_1a_bottom_diagram.pdf
 
-3) Build Order: 
+## Build Order: 
 
   1. ICS: RAM, Octal Latch, Shift Registers
   2. Arduino male headers. 
@@ -97,13 +97,15 @@ TEST POINT: Run the SDCARD test firmware
  
 TEST POINT: Run the LCD and LED test firmware.
 
+## Important
+
 The MIDI DIN ports and display should be installed last.
 
 The MIDI DIN ports get soldered on before the display, and require that the 2 front legs are removed from each DIN connector (don't just cut the legs, pull the entire piece of aluminium out with a pair of pliers, this will prevent shorts with the display header). Once the MiDI DIN ports are in. The header for the HD44780 display is soldered from the display side of the board; the reverse side in which you would normally solder from is intentionally obstructed by the MIDI ports.
 
 This is not ideal, but was necessary due to the space limitations of the board.
 
-4) Display height. the top of the display (OLED or HD44780) should sit no higher than 1.5-2mm above the the height of the switches (without switch cap). This should allow the display and buttons to sit nicely if you use the enclosure design.
+Display height. the top of the display (OLED or HD44780) should sit no higher than 1.5-2mm above the the height of the switches (without switch cap). This should allow the display and buttons to sit nicely if you use the enclosure design.
 
 5) To install the male headers that connect to the MC to the ArduinoMega, insert the headers in to the ArduinoMega then solder with the arduino attached to the headers. This will ensure perfect alignment. See the youtube video.
 ```
