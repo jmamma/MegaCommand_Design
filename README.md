@@ -2,7 +2,7 @@
 
 ## Description:
 
-The MegaCommand is an Arduino Mega MIDI shield that is backwards compatible with the R&W MiniCommand hardware and MIDICtrl framework.
+The MegaCommand is an Arduino Mega MIDI shield that is backwards compatible with the R&W MiniCommand hardware and MIDICtrl framework. The PCB is a through-hole design (no SMD soldering skills required). 
 
 * 4 x Midi ports (2 in, 2 out)
 * 4 x Rotary Encoders + Push button
