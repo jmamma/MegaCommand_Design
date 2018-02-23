@@ -34,7 +34,7 @@ void setup() {
   volatile uint8_t *ptr;      
   uint8_t myrandom = 0;
   uint8_t random_number, read_bank0, read_bank1;
-  for (ptr = reinterpret_cast<uint8_t *> (0x2200); ptr <= reinterpret_cast<uint8_t *> (0xFFFF); ptr++) {
+  for (ptr = reinterpret_cast<uint8_t *> (0x2200); ptr < reinterpret_cast<uint8_t *> (0xFFFF); ptr++) {
     sprintf(hex, "%04X", ptr);
 
 //  Serial.println("\nTesting Address ");
