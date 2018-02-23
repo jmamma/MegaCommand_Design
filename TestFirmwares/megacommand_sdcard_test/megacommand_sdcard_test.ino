@@ -5,55 +5,130 @@
 //Description: Firmware to test SDCard breakout board.
 //             Run this firmware by uploading to the MegaCommand. The frmware will write a file called test.txt to the SDCard.
 //             View the serial monitor at 9600bps to see the test results.
+//
+//             An array of size ARRAY_SIZE is filled with random bytes and is written to a file called test.txt y times. Where y = WRITE_ITERATIONS
+//             The file is then read back and the stored data is checked against the array.
 //Notes:       This firmware uses the Arduino Core.
 //             The SDCard needs to be formatted to FAT32.
 
 
 #include <SD.h>
+#define RANDOM_SEED 123456789
+#define ARRAY_SIZE 4096
+#define WRITE_ITERATIONS 256
+#define BYTES ARRAY_SIZE * WRITE_ITERATIONS
+#define OLED_CS 42
 
 File myFile;
+File myFile2;
 
 void setup()
 {
   pinMode(53, OUTPUT);
+  digitalWrite(OLED_CS, HIGH);
+
+  randomSeed(RANDOM_SEED);
+
+  uint8_t my_array[ARRAY_SIZE];
+  uint8_t random_number;
+  int x, y;
+  for (x = 0; x < ARRAY_SIZE; x++) {
+    my_array[x] = (uint8_t) random(1, 255);
+  }
 
   Serial.begin(9600);
   Serial.print("Initializing SD card...");
-    
+
   delay(100);
 
   // On the Ethernet Shield, CS is pin 4. It's set as an output by default.
-  // Note that even if it's not used as the CS pin, the hardware SS pin 
-  // (10 on most Arduino boards, 53 on the Mega) must be left as an output 
-  // or the SD library functions will not work. 
+  // Note that even if it's not used as the CS pin, the hardware SS pin
+  // (10 on most Arduino boards, 53 on the Mega) must be left as an output
+  // or the SD library functions will not work.
 
-//delayMicroseconds(1);
+  //delayMicroseconds(1);
   if (!SD.begin(5)) {
     Serial.println("initialization failed!");
   }
 
 
- //   digitalWrite(OLED_CS, LOW);
   Serial.println("initialization done.");
- 
-  // open the file. note that only one file can be open at a time,
-  // so you have to close this one before opening another.
+  SD.remove("test.txt");
+
+  unsigned long count = 0;
+  uint8_t myrandom = 0;
   myFile = SD.open("test.txt", FILE_WRITE);
- 
+
   // if the file opened okay, write to it:
   if (myFile) {
     Serial.print("Writing to test.txt...");
-    myFile.println("testing 1, 2, 3.");
-  // close the file:
+    for (y = 0; y < WRITE_ITERATIONS; y++) {
+
+      for (int x = 0; x < ARRAY_SIZE; x++) {
+        count += myFile.write(my_array[x]);
+      }
+    }
     myFile.close();
+    Serial.println("Wrote: ");
+    Serial.print(count);
+    Serial.println(" bytes");
     Serial.println("done. ");
-    Serial.println("SDCard okay");
+
   } else {
     // if the file didn't open, print an error:
     Serial.println("error opening test.txt");
   }
+  uint8_t c;
+  int8_t errors = 0;
+  myFile = SD.open("test.txt", FILE_READ);
+  if (myFile) {
+    Serial.println("Reading contents from test.txt:");
+
+    // read from the file until there's nothing else in it:
+    for (y = 0; y < WRITE_ITERATIONS; y++) {
+
+      for (int x = 0; x < ARRAY_SIZE; x++) {
+        c = myFile.read();
+        if (my_array[x] != c) {
+          Serial.print(my_array[x]);
+          Serial.print(" ");
+          Serial.println(c);
+          errors += 1;
+          Serial.print("Data read did not match array");
+        }
+      }
+    }
+    if (errors > 0) {
+      Serial.println("SDCard test failed. Data written does not match read");
+    }
+    else {
+      Serial.println("SDCard read data matches RAM.");
+    }
+    Serial.println(" ");
+
+    Serial.print("File Size: ");
+
+    Serial.println(myFile.size());
+
+    Serial.print("Wrote: ");
+    Serial.println(count);
+
+    // close the file:
+
+  } else {
+    // if the file didn't open, print an error:
+    Serial.println("error opening test.txt");
+  }
+  if (myFile.size() !=  count) {
+    Serial.println("SDCard test failed. Files size does not match bytes written");
+  }
+  else {
+    Serial.println("SDCard test Success!. Files contents matches bytes written and size matches");
+  }
+  myFile.close();
+
 }
- 
+
 void loop()
 {
   // nothing happens after setup
