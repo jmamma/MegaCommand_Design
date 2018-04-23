@@ -39,7 +39,8 @@ https://github.com/jmamma/MegaCommand_Design/blob/master/BOM_1_0_2a11
 https://docs.google.com/spreadsheets/d/1SPOctEUJUs_R-fi7xMjIrdiOk7FmjT5jRd9NrTtHMDI/edit?usp=sharing 
 
 
-[Mouser Cart (not a full list of materials)](
+[Mouser Cart (not a full list of materials)]
+
 1.0.2a:
 
 - 
