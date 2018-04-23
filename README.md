@@ -14,33 +14,42 @@ The MegaCommand is an Arduino Mega MIDI shield that is backwards compatible with
 
 ## Project Status:
 
-- Final PCBs 1_0_1a gerbers have been tested and built
+Updeate: New board has been designed and tested. 
 
-- Parts selection finalized.
+1_0_2a11
 
-- Sub systems (SD Card, MIDI, LCD, SRAM) have been tested with the Arduino libraries and MIDICtrl framework.
+Changes include:
 
-- An arduino core for the ArduinoMega has been written and tested. MidiCtrl 20 has been modified to run on the ArduinoMega and compile in the Arduino IDE. The MCLive firmware is running successfully on the MegaCommand. 
-
-- Compile errors for Wesen's firmwares. Only MCLive firmware compiles at this time.
+- 2 x 10pin expansion ports.
+- Removal of HD44780 support.
+- Removal of 12bit DAC.
+- Throuh hole Yamaichi SD_Card slot now supported. SD-Card breakout no longer required.
+- All mounting holes for MIDI DIN ports now available
 
 
 __ALL INFORMATION BELOW IS PROVIDED AS A CONVENIENCE AND COULD BE SUBJECT TO ERROR OR CHANGE.
 
 ## Parts:
-[Bill of Materials](https://docs.google.com/spreadsheets/d/1SPOctEUJUs_R-fi7xMjIrdiOk7FmjT5jRd9NrTtHMDI/edit?usp=sharing)
+[Bill of Materials]
+1.0.2a:
+
+1.0.1a:
+https://docs.google.com/spreadsheets/d/1SPOctEUJUs_R-fi7xMjIrdiOk7FmjT5jRd9NrTtHMDI/edit?usp=sharing 
+
 
 [Mouser Cart (not a full list of materials)](
+1.0.2a:
+
+1.0.1a:
 http://au.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=bd455aeb97)
 Some of these components can be sourced cheaper than at mouser, so I would recommend doing your own shopping.
 Also, the cart is incomplete, components such as LCD and SD Card breakout need to be purchased from Adafruit or alternative.
 
+
 ## Display
 
-The MegaCommand board has support for 2 display types.
-
-Only the HD44780 display is working with the MIDICtrl library and MCLive firmware at this stage.
-Porting the display libraries over to OLED is planned for a later release. Users can choose to upgrade to the OLED the display at a later stage.
+The 1.0.1a MegaCommand board has support for 2 display types (HD44780 + OLED).
+The 1.0.2a MegaCommand board only support the OLED display
 
 1) HD44870 LCD is the original LCD used in the MiniCommand and compatible with the LCD libraries.
 2) OLED 128x32 display is a new display of similar size but with fully customizable display capable of 4 lines of text and custom  graphics, it uses the SPI bus. (OLED display requires resistor position changes to enable SPI mode as per adafruit documentation https://learn.adafruit.com/2-3-monochrome-128x32-oled-display-module/assembly-1):
@@ -111,6 +120,13 @@ Display height. the top of the display (OLED or HD44780) should sit no higher th
 ```
 
 ## Enclosure:
+
+
+1.0.2a:
+
+To be advised.
+
+1.0.1a:
 
 The enclosure is based on a standard 1590BB guitar pedal enclousre.
 
