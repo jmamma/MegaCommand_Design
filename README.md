@@ -33,12 +33,16 @@ __ALL INFORMATION BELOW IS PROVIDED AS A CONVENIENCE AND COULD BE SUBJECT TO ERR
 [Bill of Materials]
 1.0.2a:
 
+https://github.com/jmamma/MegaCommand_Design/blob/master/BOM_1_0_2a11
+
 1.0.1a:
 https://docs.google.com/spreadsheets/d/1SPOctEUJUs_R-fi7xMjIrdiOk7FmjT5jRd9NrTtHMDI/edit?usp=sharing 
 
 
 [Mouser Cart (not a full list of materials)](
 1.0.2a:
+
+- 
 
 1.0.1a:
 http://au.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=bd455aeb97)
