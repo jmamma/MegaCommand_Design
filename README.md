@@ -25,31 +25,17 @@ Changes include:
 - Removal of 12bit DAC.
 - Throuh hole Yamaichi SD_Card slot now supported. SD-Card breakout no longer required.
 - All mounting holes for MIDI DIN ports now available
-
+- DC power jack polarity was reversed.
 
 __ALL INFORMATION BELOW IS PROVIDED AS A CONVENIENCE AND COULD BE SUBJECT TO ERROR OR CHANGE.
 
 ## Parts:
 [Bill of Materials]
 1.0.2a:
-
 https://github.com/jmamma/MegaCommand_Design/blob/master/BOM_1_0_2a11
 
 1.0.1a:
 https://docs.google.com/spreadsheets/d/1SPOctEUJUs_R-fi7xMjIrdiOk7FmjT5jRd9NrTtHMDI/edit?usp=sharing 
-
-
-[Mouser Cart (not a full list of materials)]
-
-1.0.2a:
-
-- 
-
-1.0.1a:
-http://au.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=bd455aeb97)
-Some of these components can be sourced cheaper than at mouser, so I would recommend doing your own shopping.
-Also, the cart is incomplete, components such as LCD and SD Card breakout need to be purchased from Adafruit or alternative.
-
 
 ## Display
 
