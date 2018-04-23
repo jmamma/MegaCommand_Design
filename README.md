@@ -30,7 +30,9 @@ Changes include:
 __ALL INFORMATION BELOW IS PROVIDED AS A CONVENIENCE AND COULD BE SUBJECT TO ERROR OR CHANGE.
 
 ## Parts:
+
 [Bill of Materials]
+
 1.0.2a:
 https://github.com/jmamma/MegaCommand_Design/blob/master/BOM_1_0_2a11
 
