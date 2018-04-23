@@ -9,8 +9,8 @@ The MegaCommand is an Arduino Mega MIDI shield that is backwards compatible with
 * 4 x Buttons
 * 1 x LCD display (Choose between OLED or LCD)
 * 128KBytes of SRAM (0-63KB accessible natively, 64-128KB accessible with bank selection)
-* 1 x Dual Channel 12bit DAC
-* 1 x USB
+* 1 x Dual Channel 12bit DAC (1.0.1a only)
+* 2 x 10pin Expansion ports (1.0.2a only)
 
 ## Project Status:
 
