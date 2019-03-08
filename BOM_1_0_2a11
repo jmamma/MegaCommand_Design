@@ -1,65 +1,62 @@
 STACKABLE ARDUINO HEADERS MALE 13mm Length:
 
-1                       PINHD-1X8BIG            X08-BIG                  JP1                                                                                               PIN HEADER                                                                                                                                                            
-1   20PIN               20PIN                   20PIN                     U$2                                                                                                                                                                                                                                                                     
-4   8x1-H8.5           PINHD-1X8                1X08                      ADCL, COMMUNICATION, POWER, PWML                                                                  PIN HEADER                                                                                                                                                            
-1   18x2-H8.5          PINHD-2X18               2X18                      XIO                                                                                               PIN HEADER 
-1   10x1-H8.5          PINHD-1X10_ARD           1X10                      JP6                                                                                               PIN HEADER                                                                                                                                                            
+1                       PINHD-1X8BIG           X08-BIG                   JP1                                                                                                PIN HEADER                                                                                                                                                            
+1   20PIN               20PIN                  20PIN                     U$2                                                                                                                                                                                                                                                                      
+4   8x1-H8.5            PINHD-1X8              1X08                      ADCL, COMMUNICATION, POWER, PWML                                                                   PIN HEADER                                                                                                                                                            
+1   18x2-H8.5           PINHD-2X18             2X18                      XIO                                                                                                PIN HEADER 
+1   10x1-H8.5           PINHD-1X10_ARD         1X10                      JP6                                                                                                PIN HEADER                                                                                                                                                            
 
 ARDUINO MINI HEADERS FEMALE (5mm height).
 
-2   PINHD-1X10          PINHD-1X10                     EXP_L, EXP_R      Pin header 1x10 0.1" spacing                                                                                                                                          
-1   PINHD-1X3                                   POWER SWITCH RAISER. 
+2   PINHD-1X10          PINHD-1X10             EXP_L, EXP_R              Pin header 1x10 0.1" spacing                                                                                                                                          
+1   PINHD-1X3                                  POWER SWITCH RAISER. 
 
 POWER JACK 2 PIN:
 
-1   POWER_JACKPTH_LOCK  490-PJ-037A       POWER_JACK_PTH_LOCK       J1                                                                                                Power Jack                                                                                                                                        
+1   POWER_JACKPTH_LOCK  490-PJ-037A            POWER_JACK_PTH_LOCK       J1                                                                                                 Power Jack                                                                                                                                        
 
 
 CAPS:
 
-21  0.1uF              75-1C10Z5U104M050B         C025-050X050              C1, C2, C3, C4, C6, C9, C10, C11, C12, C13, C14, C15, C16, C17, C18, C19, C20, C21, C22, C23, C24 CAPACITOR, European symbol                                                                                                                                            
-1   10uF               ECE-A1CKA100I         C025-050X050              C7                                                                                                CAPACITOR, European symbol                                                                                                                                            
-1   220uF              271-220-RC             TT2D6                     C5                                                                                                POLARIZED CAPACITOR, European symbol                                                                                                                                  
+21  0.1uF               75-1C10Z5U104M050B     C025-050X050              C1, C2, C3, C4, C6, C9, C10, C11, C12, C13, C14, C15, C16, C17, C18, C19, C20, C21, C22, C23, C24  CAPACITOR, European symbol                                                                                                                                            
+1   10uF                ECE-A1CKA100I          C025-050X050              C7                                                                                                 CAPACITOR, European symbol                                                                                                                                            
+1   220uF               271-220-RC             TT2D6                     C5                                                                                                 POLARIZED CAPACITOR, European symbol                                                                                                                                  
 
 RESISTORS:
 
-2   10K                4609X-AP1-103LF RPACK-BUSSED-8-SIP-PTH-8            R1, R2                                                                                                
-2   1k                 271-1K-RC             0207/7                    R11, R12                                                                                          RESISTOR, American symbol                                                                                                                                             
-8   220                 R-US_0207/7              0207/7                    R3, R4, R5, R6, R7, R8, R9, R10                                                                   RESISTOR, American symbol                                                                                                                                             
+2   10K                4609X-AP1-103LF         RPACK-BUSSED-8-SIP-PTH-8  R1, R2
+2   1k                 271-1K-RC               0207/7                    R11, R12                                                                                           RESISTOR, American symbol                                                                                                                                             
+8   220                R-US_0207/7             0207/7                    R3, R4, R5, R6, R7, R8, R9, R10                                                                    RESISTOR, American symbol                                                                                                                                             
 
 Diodes:
                                                                                                                                                            
-2   1N4148              1N4148DO35-7             DO35-7                    D1, D2      
-                                                                                      DIODE                                                                                                                                                                 
-2   5mm LED             HLMP-1301               LED_LD260                 LED0, LED1                                                                                        LED                                                                                                                   NONE       D           diode                    
+2   1N4148             1N4148DO35-7            DO35-7                    D1, D2                                                                                             DIODE                                                                                                                                                                 
+2   5mm LED            HLMP-1301               LED_LD260                 LED0, LED1                                                                                         LED                                                                                                                   NONE       D           diode                    
 
 OptoCoupler:
 
-2   6N137               782-6N137                    DIL08                     OK1, OK2                                                                                          MOTOROLA OPTO COUPLER                                  6N137        1328376    52M1895 
+2   6N137              782-6N137               DIL08                     OK1, OK2                                                                                           MOTOROLA OPTO COUPLER 6N137 1328376 52M1895 
 
 ICs:
                                                                                
-1   74HC573N            74HC573N                 DIL20                     IC1                                                                                               8-bit D latch BUS DRIVER                                                                                                                                              
-2   74LS165N            74LS165N                 DIL16                     IC2, IC3                                                                                          8-bit parallel load SHIFT                                                                                                                                    
-1   AS6C1008-55PCN      AS6C1008-55PCN           128K SRAM                 U1                                                                                                CMOS SRAM                                                           
-                                                                                               SPDT Switch                                                                                      SWCH-08261                                                           
-1   HC4050              4504N                    DIL16                     IC4      TTL or CMOS to CMOS hex LEV  SHIFTER 
+1   74HC573N           74HC573N                DIL20                     IC1                                                                                                8-bit D latch BUS DRIVER                                                                                                                                              
+2   74LS165N           74LS165N                DIL16                     IC2, IC3                                                                                           8-bit parallel load SHIFT                                                                                                                                    
+1   AS6C1008-55PCN     AS6C1008-55PCN          128K SRAM                 U1                                                                                                 CMOS SRAM                                                           
+1   HC4050             4504N                   DIL16                     IC4                                                                                                TTL or CMOS to CMOS hex LEV  SHIFTER 
 
 MIDI Jack:
                                                                                                                                 
-4   MIDIJACK            490-SDS-50                CP-2350                   U$7, U$8, U$9, U$10  DIN 5 jack also known as MIDI jack 
+4   MIDIJACK           490-SDS-50              CP-2350                   U$7, U$8, U$9, U$10                                                                                DIN 5 jack also known as MIDI jack 
         
-
 Switches:
 
-1   EG1218              SWITCH-SPDTKIT           SWITCH-SPDT_KIT           S1 
-4   3FT1D               3FT1D                    3FT                       BUTTON1, BUTTON2, BUTTON3, BUTTON4                                                                Mulitmec - 3FT1D                                                                                                                                                      
+1   EG1218             SWITCH-SPDTKIT           SWITCH-SPDT_KIT           S1 
+4   3FT1D              3FT1D                    3FT                       BUTTON1, BUTTON2, BUTTON3, BUTTON4                                                               Mulitmec - 3FT1D                                                                                                                                                      
+4   642-1D09	         1D09                     Apem                      Switch Bezels / Switch Caps Black
 
-4   642-1D09	        1D09	Apem		 Switch Bezels / Switch Caps Black
 Encoders:
                                                                                                                           
-4   PEC11               652-PEC11R-4015F-S24     ALPS_EC12E_SW             SW1, SW2, SW3, SW4                                                                                ALPS rotary Encoder EC12E                 
+4   PEC11               652-PEC11R-4015F-S24     ALPS_EC12E_SW             SW1, SW2, SW3, SW4                                                                               ALPS rotary Encoder EC12E                 
 
 
 1   YAMAICHI_SD_CARD    YAMAICHI_SD_CARD         YAMAICHI_MICROSD_VERTICAL PJS008U  
@@ -67,4 +64,5 @@ Encoders:
 OLED Display:
 
 https://www.buydisplay.com/default/arduino-2-2-inch-128x32-oled-breakout-board-module-display-white-on-black
-1   2.2INCH 128x32 OLED              
+Alternatively: https://item.taobao.com/item.htm?spm=a230r.1.14.128.4f6533eccOwzJV&id=564748067500&ns=1&abbucket=12#detail
+1   2.2INCH 128x32 OLED w/ i2c, spi, ssd1305 controller, white-on-black
