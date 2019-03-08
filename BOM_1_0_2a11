@@ -50,10 +50,9 @@ MIDI Jack:
         
 Switches:
 
-1   EG1218              SWITCH-SPDTKIT           SWITCH-SPDT_KIT           S1 
-4   3FT1D               3FT1D                    3FT                       BUTTON1, BUTTON2, BUTTON3, BUTTON4                                                               Mulitmec - 3FT1D                                                                                                                                                      
-??? SPDT Switch SWCH-08261
-4   642-1D09	        1D09                     Apem                      Switch Bezels / Switch Caps Black
+1   EG1218             SWITCH-SPDTKIT           SWITCH-SPDT_KIT           S1 
+4   3FT1D              3FT1D                    3FT                       BUTTON1, BUTTON2, BUTTON3, BUTTON4                                                               Mulitmec - 3FT1D                                                                                                                                                      
+4   642-1D09	         1D09                     Apem                      Switch Bezels / Switch Caps Black
 
 Encoders:
                                                                                                                           
