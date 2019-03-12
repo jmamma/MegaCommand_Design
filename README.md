@@ -45,7 +45,7 @@ The 1.0.1a MegaCommand board has support for 2 display types (HD44780 + OLED).
 The 1.0.2a MegaCommand board only support the OLED display
 
 1) HD44870 LCD is the original LCD used in the MiniCommand and compatible with the LCD libraries.
-2) OLED 128x32 display is a new display of similar size but with fully customizable display capable of 4 lines of text and custom  graphics, it uses the SPI bus. (OLED display requires resistor position changes to enable SPI mode as per adafruit documentation https://learn.adafruit.com/2-3-monochrome-128x32-oled-display-module/assembly-1):
+2) OLED 128x32 display is a new display of similar size but with the ability to display 4 lines of text and custom graphics, it uses the SPI bus. (OLED display requires resistor position changes to enable SPI mode as per adafruit documentation https://learn.adafruit.com/2-3-monochrome-128x32-oled-display-module/assembly-1):
 
 ## Build 
 
