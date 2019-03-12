@@ -76,26 +76,37 @@ https://github.com/jmamma/MegaCommand_Design/blob/master/megacommand_1_0_1a_bott
 TEST POINT: Run the SRAM firmware test.
 
   4. MEC switches (Make sure these sit completely flush with the board and are not leaning to one side)
-  5. LCD Trimmer
+  5. LCD Trimmer (1_0_1 board only only)
   6. Resistor arrays
   7. Encoders (Make sure these sit completely flush with the board and are not leaning to one side)  
   
 TEST POINT: Run the button and encoder test firmware.
-  8. ICS: MIDI Optocouplers, HEX buffer, DAC 
+  8. ICS: MIDI Optocouplers, HEX buffer, DAC (1_0_1 board only) 
   9. Resistors + diodes
-10. MIDI DIN ports. (completly remove the 2 front pins by pulling the entire piece of aluminum from the connector)
+10. MIDI DIN ports. (1_0_1 board requires removal of the 2 front pins by pulling the entire piece of aluminum from the connector)
  
 TEST POINT: Run the MIDIPort test firmware.
 
  11. Power Jack (+9V tip)
  12. SDCard headers (the female header is placed on the bottom side of the board, and the pins are soldered from the top side. Solder male headers to the sd-card breakout board)
- 
+     (1_0_2 board can use the Yamaichi SD card holder and the above header is not required.)
+     
 TEST POINT: Run the SDCARD test firmware
  
+ HD44780:
  13. Display header HD44780 (soldered from the top side of the board, the bottom side is intentionally obstructed by MIDI ports). There are 2 display header locations, one for each display type, choose the correct one.
  14. Display HD44780 (Soldered to the display header once the header is installed, max height of display should be 1.5-2mm above mec switches (without switch cap).
+ 
+ OLED:
+ 13. Oled display requires correct resistor poisiton in order to be configured for SPI mode. (See documentation above to confirm the resistor placement)
+ 14. Male header to be soldered to OLED board. Header is then soldered on to MegaCommand PCB. The height of the oled is important. (Insert height here)
+ 
  15. LEDs (+ anode pin nearest to the bottom of the board for both LEDs. )
  16. Power switch. (optional, you can solder a short between the two right most pins on EG1212B  
+ 
+ Expansion Headers (1_0_2 board only):
+ 
+ 17. These are short 5mm headers. It might not be possible to buy them at the right lenght so you'll need to cut them down to 10 pin.
  
 TEST POINT: Run the LCD and LED test firmware.
 
@@ -103,11 +114,12 @@ TEST POINT: Run the LCD and LED test firmware.
 
 The MIDI DIN ports and display should be installed last.
 
-The MIDI DIN ports get soldered on before the display, and require that the 2 front legs are removed from each DIN connector (don't just cut the legs, pull the entire piece of aluminium out with a pair of pliers, this will prevent shorts with the display header). Once the MiDI DIN ports are in. The header for the HD44780 display is soldered from the display side of the board; the reverse side in which you would normally solder from is intentionally obstructed by the MIDI ports.
+The MIDI DIN ports get soldered on before the display
+For the 1_0_1 board: the DIN ports require that the 2 front legs are removed from each DIN connector (don't just cut the legs, pull the entire piece of aluminium out with a pair of pliers, this will prevent shorts with the display header). Once the MiDI DIN ports are in. The header for the HD44780 display is soldered from the display side of the board; the reverse side in which you would normally solder from is intentionally obstructed by the MIDI ports.
 
 This is not ideal, but was necessary due to the space limitations of the board.
 
-Display height. the top of the display (OLED or HD44780) should sit no higher than 1.5-2mm above the the height of the switches (without switch cap). This should allow the display and buttons to sit nicely if you use the enclosure design.
+Display height. the top of the display (HD44780) should sit no higher than 1.5-2mm above the the height of the switches (without switch cap). This should allow the display and buttons to sit nicely if you use the enclosure design.
 
 5) To install the male headers that connect to the MC to the ArduinoMega, insert the headers in to the ArduinoMega then solder with the arduino attached to the headers. This will ensure perfect alignment. See the youtube video.
 ```
