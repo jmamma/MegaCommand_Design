@@ -34,7 +34,7 @@ __ALL INFORMATION BELOW IS PROVIDED AS A CONVENIENCE AND COULD BE SUBJECT TO ERR
 [Bill of Materials]
 
 1.0.2a:
-https://github.com/jmamma/MegaCommand_Design/blob/master/BOM_1_0_2a11
+https://github.com/jmamma/MegaCommand_Design/blob/master/1_0_2/BOM_1_0_2a11
 
 1.0.1a:
 https://docs.google.com/spreadsheets/d/1SPOctEUJUs_R-fi7xMjIrdiOk7FmjT5jRd9NrTtHMDI/edit?usp=sharing 
@@ -63,9 +63,6 @@ VERIFY CHIP ORIENTATION BEFORE SOLDERING.
 Take care in making sure the ICs are inserted the correct way around.
 
 You do not want to have to try and desolder 32 pins.
-
-https://github.com/jmamma/MegaCommand_Design/blob/master/megacommand_1_0_1a_top_diagram.pdf
-https://github.com/jmamma/MegaCommand_Design/blob/master/megacommand_1_0_1a_bottom_diagram.pdf
 
 ## Build Order: 
 
