@@ -84,14 +84,13 @@ void setup()
       }
     }
     myFile.close();
-    Serial.println("Wrote: ");
+    Serial.print("Wrote: ");
     Serial.print(count);
-    Serial.println(" bytes");
-    Serial.println("done. ");
+    Serial.println(" bytes.");
 
   } else {
     // if the file didn't open, print an error:
-    Serial.println("error opening test.txt");
+    Serial.println("write test: error opening test.txt");
   }
   uint8_t c;
   int8_t errors = 0;
@@ -132,13 +131,13 @@ void setup()
 
   } else {
     // if the file didn't open, print an error:
-    Serial.println("error opening test.txt");
+    Serial.println("read test: error opening test.txt");
   }
   if (myFile && myFile.size() !=  count) {
-    Serial.println("SDCard test failed. Files size does not match bytes written");
+    Serial.println("read test: files size does not match bytes written");
   }
   else {
-    Serial.println("SDCard test Success!. Files contents matches bytes written and size matches");
+    Serial.println("read test Success!. Files contents matches bytes written and size matches");
   }
   myFile.close();
 
