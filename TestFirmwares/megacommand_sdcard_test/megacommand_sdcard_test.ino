@@ -76,9 +76,11 @@ void setup()
 
   // if the file opened okay, write to it:
   if (myFile) {
-    Serial.print("Writing to test.txt...");
+    Serial.println("Writing to test.txt...");
     for (y = 0; y < WRITE_ITERATIONS; y++) {
-
+      Serial.print("Writing iteration ");
+      Serial.print(y);
+      Serial.println("...");
       for (int x = 0; x < ARRAY_SIZE; x++) {
         count += myFile.write(my_array[x]);
       }
@@ -87,11 +89,13 @@ void setup()
     Serial.print("Wrote: ");
     Serial.print(count);
     Serial.println(" bytes.");
-
   } else {
     // if the file didn't open, print an error:
     Serial.println("write test: error opening test.txt");
   }
+
+
+  Serial.println();
   uint8_t c;
   int8_t errors = 0;
   myFile = SD.open("test.txt", FILE_READ);
@@ -128,18 +132,18 @@ void setup()
     Serial.println(count);
 
     // close the file:
-
+    if (myFile && myFile.size() !=  count) {
+      Serial.println("read test: files size does not match bytes written");
+    }
+    else {
+      Serial.println("read test Success!. Files contents matches bytes written and size matches");
+    }
+    myFile.close();
+    
   } else {
     // if the file didn't open, print an error:
     Serial.println("read test: error opening test.txt");
   }
-  if (myFile && myFile.size() !=  count) {
-    Serial.println("read test: files size does not match bytes written");
-  }
-  else {
-    Serial.println("read test Success!. Files contents matches bytes written and size matches");
-  }
-  myFile.close();
 
 }
 
