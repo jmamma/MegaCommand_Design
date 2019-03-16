@@ -17,15 +17,19 @@
 #define ARRAY_SIZE 4096
 #define WRITE_ITERATIONS 256
 #define BYTES ARRAY_SIZE * WRITE_ITERATIONS
-#define OLED_CS 42
 
 File myFile;
 File myFile2;
 
 void setup()
 {
+  // PL7: arduino pin 42, oled CS
+  pinMode(42, OUTPUT);
+  digitalWrite(42, HIGH);
+  
+  // PB0: arduino pin 53, SS
   pinMode(53, OUTPUT);
-  digitalWrite(OLED_CS, HIGH);
+  digitalWrite(53, HIGH);
 
   randomSeed(RANDOM_SEED);
 
@@ -47,10 +51,21 @@ void setup()
   // or the SD library functions will not work.
 
   //delayMicroseconds(1);
-  if (!SD.begin(5)) {
-    Serial.println("initialization failed!");
+
+  bool ret = false;
+
+  for (uint8_t n = 0; n < 5 && ret == false; n++) {
+    ret = SD.begin(53);
+    if (!ret) {
+      Serial.print(".");
+      delay(50);
+    }
   }
 
+  if(!ret)
+  {
+    Serial.println("initialization failed!");
+  }
 
   Serial.println("initialization done.");
   SD.remove("test.txt");
@@ -119,7 +134,7 @@ void setup()
     // if the file didn't open, print an error:
     Serial.println("error opening test.txt");
   }
-  if (myFile.size() !=  count) {
+  if (myFile && myFile.size() !=  count) {
     Serial.println("SDCard test failed. Files size does not match bytes written");
   }
   else {
