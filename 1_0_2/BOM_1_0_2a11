@@ -1,10 +1,10 @@
-STACKABLE ARDUINO HEADERS MALE 13mm Length:
+STACKABLE ARDUINO HEADER BREAKAWAY MALE 13mm Length:
 
 1                       PINHD-1X8BIG           X08-BIG                   JP1                                                                                                PIN HEADER                                                                                                                                                            
-1   20PIN               20PIN                  20PIN                     U$2                                                                                                                                                                                                                                                                      
-4   8x1-H8.5            PINHD-1X8              1X08                      ADCL, COMMUNICATION, POWER, PWML                                                                   PIN HEADER                                                                                                                                                            
-1   18x2-H8.5           PINHD-2X18             2X18                      XIO                                                                                                PIN HEADER 
-1   10x1-H8.5           PINHD-1X10_ARD         1X10                      JP6                                                                                                PIN HEADER                                                                                                                                                            
+1   20x1                20PIN                  20PIN                     U$2                                                                                                                                                                                                                                                                      
+4   8x1                 PINHD-1X8              1X08                      ADCL, COMMUNICATION, POWER, PWML                                                                   PIN HEADER                                                                                                                                                            
+1   18x2                PINHD-2X18             2X18                      XIO                                                                                                PIN HEADER 
+1   10x1                PINHD-1X10_ARD         1X10                      JP6                                                                                                PIN HEADER                                                                                                                                                            
 
 ARDUINO MINI HEADERS FEMALE (5mm height).
 
