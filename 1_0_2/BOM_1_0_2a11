@@ -20,13 +20,13 @@ CAPS:
 
 21  0.1uF               75-1C10Z5U104M050B     C025-050X050              C1, C2, C3, C4, C6, C9, C10, C11, C12, C13, C14, C15, C16, C17, C18, C19, C20, C21, C22, C23, C24  CAPACITOR, European symbol                                                                                                                                            
 1   10uF                ECE-A1CKA100I          C025-050X050              C7                                                                                                 CAPACITOR, European symbol                                                                                                                                            
-1   220uF               271-220-RC             TT2D6                     C5                                                                                                 POLARIZED CAPACITOR, European symbol                                                                                                                                  
+1   220uF               667-ECA-1CM221B        TT2D6                     C5                                                                                                 POLARIZED CAPACITOR, European symbol                                                                                                                                  
 
 RESISTORS:
 
 2   10K                4609X-AP1-103LF         RPACK-BUSSED-8-SIP-PTH-8  R1, R2
 2   1k                 271-1K-RC               0207/7                    R11, R12                                                                                           RESISTOR, American symbol                                                                                                                                             
-8   220                R-US_0207/7             0207/7                    R3, R4, R5, R6, R7, R8, R9, R10                                                                    RESISTOR, American symbol                                                                                                                                             
+8   220                271-220-RC              0207/7                    R3, R4, R5, R6, R7, R8, R9, R10                                                                    RESISTOR, American symbol                                                                                                                                             
 
 Diodes:
                                                                                                                                                            
@@ -39,20 +39,20 @@ OptoCoupler:
 
 ICs:
                                                                                
-1   74HC573N           74HC573N                DIL20                     IC1                                                                                                8-bit D latch BUS DRIVER                                                                                                                                              
-2   74LS165N           74LS165N                DIL16                     IC2, IC3                                                                                           8-bit parallel load SHIFT                                                                                                                                    
+1   74HC573N           SN74HC573ANE4           DIL20                     IC1                                                                                                8-bit D latch BUS DRIVER                                                                                                                                              
+2   74LS165N           SN74LS165AN             DIL16                     IC2, IC3                                                                                           8-bit parallel load SHIFT                                                                                                                                    
 1   AS6C1008-55PCN     AS6C1008-55PCN          128K SRAM                 U1                                                                                                 CMOS SRAM                                                           
-1   CD74HC4050E        CD74HC4050E                   DIL16                     IC4                                                                                                TTL or CMOS to CMOS hex LEV  SHIFTER 
+1   CD74HC4050E        CD74HC4050E             DIL16                     IC4                                                                                                TTL or CMOS to CMOS hex LEV  SHIFTER 
 
 MIDI Jack:
                                                                                                                                 
-4   MIDIJACK           490-SDS-50              CP-2350                   U$7, U$8, U$9, U$10                                                                                DIN 5 jack also known as MIDI jack 
+4   MIDIJACK           490-SDS-50J             CP-2350                   U$7, U$8, U$9, U$10                                                                                DIN 5 jack also known as MIDI jack 
         
 Switches:
 
-1   EG1218             SWITCH-SPDTKIT           SWITCH-SPDT_KIT           S1 
-4   3FT1D              3FT1D                    3FT                       BUTTON1, BUTTON2, BUTTON3, BUTTON4                                                               Mulitmec - 3FT1D                                                                                                                                                      
-4   642-1D09	         1D09                     Apem                      Switch Bezels / Switch Caps Black
+1   EG1218             612-EG1218              SWITCH-SPDT_KIT           S1 
+4   3FT1D              642-3FTH9               3FT                       BUTTON1, BUTTON2, BUTTON3, BUTTON4                                                               Mulitmec - 3FTH9                                                                                                                                                      
+4   642-1D09	         1D09                    Apem                      Switch Bezels / Switch Caps Black
 
 Encoders:
                                                                                                                           
