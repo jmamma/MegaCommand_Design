@@ -18,6 +18,9 @@ Stack is 8KB in size.
 * 1 x Dual Channel 12bit DAC (1.0.1a only)
 * 2 x 10pin Expansion ports (1.0.2 only)
 
+The MIDICtrl20 framework respository contains the software component of this project.
+https://github.com/jmamma/MIDICtrl20_MegaCommand
+
 ## Project Status:
 
 Updete: New board has been designed and tested. 
