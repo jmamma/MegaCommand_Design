@@ -42,7 +42,7 @@ ICs:
 1   74HC573N           74HC573N                DIL20                     IC1                                                                                                8-bit D latch BUS DRIVER                                                                                                                                              
 2   74LS165N           74LS165N                DIL16                     IC2, IC3                                                                                           8-bit parallel load SHIFT                                                                                                                                    
 1   AS6C1008-55PCN     AS6C1008-55PCN          128K SRAM                 U1                                                                                                 CMOS SRAM                                                           
-1   CD74HC4050E        CD74HC4050E                   DIL16                     IC4                                                                                                TTL or CMOS to CMOS hex LEV  SHIFTER 
+1   CD74HC4050E        CD74HC4050E             DIL16                     IC4             (DO NOT USE CD4050BE)                                                                               TTL or CMOS to CMOS hex LEV  SHIFTER 
 
 MIDI Jack:
                                                                                                                                 
