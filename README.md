@@ -101,7 +101,8 @@ TEST POINT: Run the SDCARD test firmware
  13. Oled display requires correct resistor poisiton in order to be configured for SPI mode. (See documentation above to confirm the resistor placement)
  14. Male header to be soldered to OLED board. Header is then soldered on to MegaCommand PCB. The height of the OLED display is important. The distance between the mainboard pcb, and the bottom on the OLED pcb should be 5mm when soldered.
  
- 15. LEDs (+ anode pin nearest to the bottom of the board for both LEDs. )
+ 15. LEDs (+ anode pin nearest to the bottom of the board for both LEDs. ). When soldered, the tip of the LED should measure 11mm above mainboard pcb.
+ 
  16. Power switch. (optional, you can solder a short between the two right most pins on EG1212B  
  
  Expansion Headers (1_0_2 board only):
