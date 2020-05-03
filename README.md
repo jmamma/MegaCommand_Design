@@ -58,16 +58,10 @@ The 1.0.2a MegaCommand board only support the OLED display
 
 ## Build 
 
-Videos detailing the build process (annotations to follow).
-
-MegaCommand 1.0.1a:
-https://www.youtube.com/watch?v=15qRWJqVOe8
-
-Optional OLED display install:
-https://www.youtube.com/watch?v=Sr32vFOjeSc
-
 ```
 VERIFY CHIP ORIENTATION BEFORE SOLDERING.
+
+OLED/HD44780 display must be installed last.
 
 Take care in making sure the ICs are inserted the correct way around.
 
@@ -105,29 +99,27 @@ TEST POINT: Run the SDCARD test firmware
  
  OLED:
  13. Oled display requires correct resistor poisiton in order to be configured for SPI mode. (See documentation above to confirm the resistor placement)
- 14. Male header to be soldered to OLED board. Header is then soldered on to MegaCommand PCB. The height of the oled is important. (Insert height here)
+ 14. Male header to be soldered to OLED board. Header is then soldered on to MegaCommand PCB. The height of the OLED display is important. The distance between the mainboard pcb, and the bottom on the OLED pcb should be 5mm when soldered.
  
  15. LEDs (+ anode pin nearest to the bottom of the board for both LEDs. )
  16. Power switch. (optional, you can solder a short between the two right most pins on EG1212B  
  
  Expansion Headers (1_0_2 board only):
  
- 17. These are short 5mm headers. It might not be possible to buy them at the right lenght so you'll need to cut them down to 10 pin.
+ 17. These are short 5mm headers. It might not be possible to buy them at the right length so you'll need to cut them down to 10 pin.
  
 TEST POINT: Run the LCD and LED test firmware.
 
 ## Important
 
-The MIDI DIN ports and display should be installed last.
+Display must be installed last.
 
 The MIDI DIN ports get soldered on before the display
-For the 1_0_1 board: the DIN ports require that the 2 front legs are removed from each DIN connector (don't just cut the legs, pull the entire piece of aluminium out with a pair of pliers, this will prevent shorts with the display header). Once the MiDI DIN ports are in. The header for the HD44780 display is soldered from the display side of the board; the reverse side in which you would normally solder from is intentionally obstructed by the MIDI ports.
 
+For the 1_0_1 board: the DIN ports require that the 2 front legs are removed from each DIN connector (don't just cut the legs, pull the entire piece of aluminium out with a pair of pliers, this will prevent shorts with the display header). Once the MiDI DIN ports are in. The header for the HD44780 display is soldered from the display side of the board; the reverse side in which you would normally solder from is intentionally obstructed by the MIDI ports.
 This is not ideal, but was necessary due to the space limitations of the board.
 
-Display height. the top of the display (HD44780) should sit no higher than 1.5-2mm above the the height of the switches (without switch cap). This should allow the display and buttons to sit nicely if you use the enclosure design.
-
-5) To install the male headers that connect to the MC to the ArduinoMega, insert the headers in to the ArduinoMega then solder with the arduino attached to the headers. This will ensure perfect alignment. See the youtube video.
+5) To install the male headers that connect to the MC to the ArduinoMega, insert the headers in to the ArduinoMega then solder with the arduino attached to the headers. This will ensure perfect alignment.
 ```
 
 ## Enclosure:
