@@ -23,7 +23,7 @@ https://github.com/jmamma/MIDICtrl20_MegaCommand
 
 ## Project Status:
 
-Updete: New board has been designed and tested. 
+Update: New board has been designed and tested. 
 
 1_0_2a12
 
@@ -32,11 +32,11 @@ Changes include:
 - 2 x 10pin expansion ports.
 - Removal of HD44780 support.
 - Removal of 12bit DAC.
-- Throuh hole Yamaichi SD_Card slot now supported. SD-Card breakout no longer required.
+- Through hole Yamaichi SD_Card slot now supported. SD-Card breakout no longer required.
 - All mounting holes for MIDI DIN ports now available
 - DC power jack polarity was reversed.
 
-__ALL INFORMATION BELOW IS PROVIDED AS A CONVENIENCE AND COULD BE SUBJECT TO ERROR OR CHANGE.
+__ALL INFORMATION BELOW IS PROVIDED AS A CONVENIENCE AND COULD BE SUBJECT TO ERROR OR CHANGE.__
 
 ## Parts:
 
@@ -151,7 +151,7 @@ The MegaCommand shield was designed to be backwards compatible with the original
 
 However, there are notable differences between the two systems, including new pin assignments which must be taken account for when using the original MidiCtrl libraries.
 
-The original MiniCommand used the ATMega64 microprocessor whilst the MegaCommand Shield is built on top of ArduinoMega which uses the ATMega2560 processor. The ATMega2560 shares most of the IO functionality of the ATMega64 but has additional pins, and a differernt pin-to-port layout.
+The original MiniCommand used the ATMega64 microprocessor whilst the MegaCommand Shield is built on top of ArduinoMega which uses the ATMega2560 processor. The ATMega2560 shares most of the IO functionality of the ATMega64 but has additional pins, and a different pin-to-port layout.
 
 The MegaCommand Shield accesses the ATMega2560 processor on board the ArduinoMega through the exposed headers, not all pins on the ATMega2560 are exposed through this Arduino interface.
 
@@ -193,7 +193,7 @@ For example, the MegaCommand core is necessary for running the MCL firmware and 
 
 1) Open the Arduino IDE, Under the Tools menu, select the core you wish to use from the "Board:" menu
 
-The default Arduino core is named "Arduion/Genuino Mega or Mega 2560"
+The default Arduino core is named "Arduino/Genuino Mega or Mega 2560"
 
 The MegaCommand core will be listed at the bottom. 
 
@@ -215,7 +215,7 @@ SRAM
 
 BankSel = PL6
 
-Key Scanning (Shift Registor Circuit):
+Key Scanning (Shift Register Circuit):
 
 PL0 = OUT
 PL1 = SHIFT
