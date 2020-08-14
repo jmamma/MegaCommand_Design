@@ -18,9 +18,12 @@ Stack is 8KB in size.
 * 1 x Dual Channel 12bit DAC (1.0.1a only)
 * 2 x 10pin Expansion ports (1.0.2 only)
 
+The MIDICtrl20 framework respository contains the software component of this project.
+https://github.com/jmamma/MIDICtrl20_MegaCommand
+
 ## Project Status:
 
-Updete: New board has been designed and tested. 
+Update: New board has been designed and tested. 
 
 1_0_2a12
 
@@ -29,11 +32,11 @@ Changes include:
 - 2 x 10pin expansion ports.
 - Removal of HD44780 support.
 - Removal of 12bit DAC.
-- Throuh hole Yamaichi SD_Card slot now supported. SD-Card breakout no longer required.
+- Through hole Yamaichi SD_Card slot now supported. SD-Card breakout no longer required.
 - All mounting holes for MIDI DIN ports now available
 - DC power jack polarity was reversed.
 
-__ALL INFORMATION BELOW IS PROVIDED AS A CONVENIENCE AND COULD BE SUBJECT TO ERROR OR CHANGE.
+__ALL INFORMATION BELOW IS PROVIDED AS A CONVENIENCE AND COULD BE SUBJECT TO ERROR OR CHANGE.__
 
 ## Parts:
 
@@ -55,16 +58,10 @@ The 1.0.2a MegaCommand board only support the OLED display
 
 ## Build 
 
-Videos detailing the build process (annotations to follow).
-
-MegaCommand 1.0.1a:
-https://www.youtube.com/watch?v=15qRWJqVOe8
-
-Optional OLED display install:
-https://www.youtube.com/watch?v=Sr32vFOjeSc
-
 ```
 VERIFY CHIP ORIENTATION BEFORE SOLDERING.
+
+OLED/HD44780 display must be installed last.
 
 Take care in making sure the ICs are inserted the correct way around.
 
@@ -102,29 +99,28 @@ TEST POINT: Run the SDCARD test firmware
  
  OLED:
  13. Oled display requires correct resistor poisiton in order to be configured for SPI mode. (See documentation above to confirm the resistor placement)
- 14. Male header to be soldered to OLED board. Header is then soldered on to MegaCommand PCB. The height of the oled is important. (Insert height here)
+ 14. Male header to be soldered to OLED board. Header is then soldered on to MegaCommand PCB. The height of the OLED display is important. The distance between the mainboard pcb, and the bottom on the OLED pcb should be 5mm when soldered.
  
- 15. LEDs (+ anode pin nearest to the bottom of the board for both LEDs. )
+ 15. LEDs (+ anode pin nearest to the bottom of the board for both LEDs. ). When soldered, the tip of the LED should measure 11mm above mainboard pcb.
+ 
  16. Power switch. (optional, you can solder a short between the two right most pins on EG1212B  
  
  Expansion Headers (1_0_2 board only):
  
- 17. These are short 5mm headers. It might not be possible to buy them at the right lenght so you'll need to cut them down to 10 pin.
+ 17. These are short 5mm headers. It might not be possible to buy them at the right length so you'll need to cut them down to 10 pin.
  
 TEST POINT: Run the LCD and LED test firmware.
 
 ## Important
 
-The MIDI DIN ports and display should be installed last.
+Display must be installed last.
 
 The MIDI DIN ports get soldered on before the display
-For the 1_0_1 board: the DIN ports require that the 2 front legs are removed from each DIN connector (don't just cut the legs, pull the entire piece of aluminium out with a pair of pliers, this will prevent shorts with the display header). Once the MiDI DIN ports are in. The header for the HD44780 display is soldered from the display side of the board; the reverse side in which you would normally solder from is intentionally obstructed by the MIDI ports.
 
+For the 1_0_1 board: the DIN ports require that the 2 front legs are removed from each DIN connector (don't just cut the legs, pull the entire piece of aluminium out with a pair of pliers, this will prevent shorts with the display header). Once the MiDI DIN ports are in. The header for the HD44780 display is soldered from the display side of the board; the reverse side in which you would normally solder from is intentionally obstructed by the MIDI ports.
 This is not ideal, but was necessary due to the space limitations of the board.
 
-Display height. the top of the display (HD44780) should sit no higher than 1.5-2mm above the the height of the switches (without switch cap). This should allow the display and buttons to sit nicely if you use the enclosure design.
-
-5) To install the male headers that connect to the MC to the ArduinoMega, insert the headers in to the ArduinoMega then solder with the arduino attached to the headers. This will ensure perfect alignment. See the youtube video.
+5) To install the male headers that connect to the MC to the ArduinoMega, insert the headers in to the ArduinoMega then solder with the arduino attached to the headers. This will ensure perfect alignment.
 ```
 
 ## Enclosure:
@@ -155,7 +151,7 @@ The MegaCommand shield was designed to be backwards compatible with the original
 
 However, there are notable differences between the two systems, including new pin assignments which must be taken account for when using the original MidiCtrl libraries.
 
-The original MiniCommand used the ATMega64 microprocessor whilst the MegaCommand Shield is built on top of ArduinoMega which uses the ATMega2560 processor. The ATMega2560 shares most of the IO functionality of the ATMega64 but has additional pins, and a differernt pin-to-port layout.
+The original MiniCommand used the ATMega64 microprocessor whilst the MegaCommand Shield is built on top of ArduinoMega which uses the ATMega2560 processor. The ATMega2560 shares most of the IO functionality of the ATMega64 but has additional pins, and a different pin-to-port layout.
 
 The MegaCommand Shield accesses the ATMega2560 processor on board the ArduinoMega through the exposed headers, not all pins on the ATMega2560 are exposed through this Arduino interface.
 
@@ -197,7 +193,7 @@ For example, the MegaCommand core is necessary for running the MCL firmware and 
 
 1) Open the Arduino IDE, Under the Tools menu, select the core you wish to use from the "Board:" menu
 
-The default Arduino core is named "Arduion/Genuino Mega or Mega 2560"
+The default Arduino core is named "Arduino/Genuino Mega or Mega 2560"
 
 The MegaCommand core will be listed at the bottom. 
 
@@ -219,7 +215,7 @@ SRAM
 
 BankSel = PL6
 
-Key Scanning (Shift Registor Circuit):
+Key Scanning (Shift Register Circuit):
 
 PL0 = OUT
 PL1 = SHIFT

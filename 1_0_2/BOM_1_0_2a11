@@ -1,10 +1,10 @@
-STACKABLE ARDUINO HEADERS MALE 13mm Length:
+STACKABLE ARDUINO HEADER BREAKAWAY MALE 13mm Length:
 
 1                       PINHD-1X8BIG           X08-BIG                   JP1                                                                                                PIN HEADER                                                                                                                                                            
-1   20PIN               20PIN                  20PIN                     U$2                                                                                                                                                                                                                                                                      
-4   8x1-H8.5            PINHD-1X8              1X08                      ADCL, COMMUNICATION, POWER, PWML                                                                   PIN HEADER                                                                                                                                                            
-1   18x2-H8.5           PINHD-2X18             2X18                      XIO                                                                                                PIN HEADER 
-1   10x1-H8.5           PINHD-1X10_ARD         1X10                      JP6                                                                                                PIN HEADER                                                                                                                                                            
+1   20x1                20PIN                  20PIN                     U$2                                                                                                                                                                                                                                                                      
+4   8x1                 PINHD-1X8              1X08                      ADCL, COMMUNICATION, POWER, PWML                                                                   PIN HEADER                                                                                                                                                            
+1   18x2                PINHD-2X18             2X18                      XIO                                                                                                PIN HEADER 
+1   10x1                PINHD-1X10_ARD         1X10                      JP6                                                                                                PIN HEADER                                                                                                                                                            
 
 ARDUINO MINI HEADERS FEMALE (5mm height).
 
@@ -16,7 +16,7 @@ POWER JACK 2 PIN:
 1   POWER_JACKPTH_LOCK  490-PJ-037A            POWER_JACK_PTH_LOCK       J1                                                                                                 Power Jack                                                                                                                                        
 
 
-CAPS:
+CAPACITORS:
 
 21  0.1uF               75-1C10Z5U104M050B     C025-050X050              C1, C2, C3, C4, C6, C9, C10, C11, C12, C13, C14, C15, C16, C17, C18, C19, C20, C21, C22, C23, C24  CAPACITOR, European symbol                                                                                                                                            
 1   10uF                ECE-A1CKA100I          C025-050X050              C7                                                                                                 CAPACITOR, European symbol                                                                                                                                            
@@ -42,7 +42,7 @@ ICs:
 1   74HC573N           74HC573N                DIL20                     IC1                                                                                                8-bit D latch BUS DRIVER                                                                                                                                              
 2   74LS165N           74LS165N                DIL16                     IC2, IC3                                                                                           8-bit parallel load SHIFT                                                                                                                                    
 1   AS6C1008-55PCN     AS6C1008-55PCN          128K SRAM                 U1                                                                                                 CMOS SRAM                                                           
-1   HC4050             4504N                   DIL16                     IC4                                                                                                TTL or CMOS to CMOS hex LEV  SHIFTER 
+1   CD74HC4050E        CD74HC4050E             DIL16                     IC4  (DO NOT USE CD4050BE)                                                                               TTL or CMOS to CMOS hex LEV  SHIFTER 
 
 MIDI Jack:
                                                                                                                                 
@@ -51,7 +51,7 @@ MIDI Jack:
 Switches:
 
 1   EG1218             SWITCH-SPDTKIT           SWITCH-SPDT_KIT           S1 
-4   3FT1D              3FT1D                    3FT                       BUTTON1, BUTTON2, BUTTON3, BUTTON4                                                               Mulitmec - 3FT1D                                                                                                                                                      
+4   642-3FTH9          3FT1D                    3FT                       BUTTON1, BUTTON2, BUTTON3, BUTTON4                                                               Mulitmec - 3FT1D                                                                                                                                                      
 4   642-1D09	         1D09                     Apem                      Switch Bezels / Switch Caps Black
 
 Encoders:
@@ -66,3 +66,5 @@ OLED Display:
 https://www.buydisplay.com/default/arduino-2-2-inch-128x32-oled-breakout-board-module-display-white-on-black
 Alternatively: https://item.taobao.com/item.htm?spm=a230r.1.14.128.4f6533eccOwzJV&id=564748067500&ns=1&abbucket=12#detail
 1   2.2INCH 128x32 OLED w/ i2c, spi, ssd1305 controller, white-on-black
+
+(display must be configured for SPI mode)
