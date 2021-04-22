@@ -41,6 +41,9 @@ Important: OLED display requires resistor position changes to enable SPI mode as
 https://learn.adafruit.com/2-3-monochrome-128x32-oled-display-module/assembly-1):
 
 ## PCB Fabrication:
+
+You can easily get your own PCBs made from a manufacturer.
+
 [PCBWay.com fabrication options](https://github.com/jmamma/MegaCommand_Design/blob/master/pcb_fabrication_preferences.jpg)
 
 Gerber files (pcb layout diagrams used for fabrication) are included in the ./gerber/ directory above.
