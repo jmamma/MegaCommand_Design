@@ -23,18 +23,7 @@ https://github.com/jmamma/MIDICtrl20_MegaCommand
 
 ## Project Status:
 
-Update: New board has been designed and tested. 
-
-1_0_2a12
-
-Changes include:
-
-- 2 x 10pin expansion ports.
-- Removal of HD44780 support.
-- Removal of 12bit DAC.
-- Through hole Yamaichi SD_Card slot now supported. SD-Card breakout no longer required.
-- All mounting holes for MIDI DIN ports now available
-- DC power jack polarity was reversed.
+Board revision: 1_0_2a12
 
 __ALL INFORMATION BELOW IS PROVIDED AS A CONVENIENCE AND COULD BE SUBJECT TO ERROR OR CHANGE.__
 
@@ -43,20 +32,20 @@ __ALL INFORMATION BELOW IS PROVIDED AS A CONVENIENCE AND COULD BE SUBJECT TO ERR
 [Bill of Materials]
 
 1.0.2a:
-https://github.com/jmamma/MegaCommand_Design/blob/master/1_0_2/BOM_1_0_2a11
-
-1.0.1a:
-https://docs.google.com/spreadsheets/d/1SPOctEUJUs_R-fi7xMjIrdiOk7FmjT5jRd9NrTtHMDI/edit?usp=sharing 
+https://github.com/jmamma/MegaCommand_Design/blob/master/1_0_2/bill_of_materials
 
 ## Display
 
-The 1.0.1a MegaCommand board has support for 2 display types (HD44780 + OLED).
-The 1.0.2a MegaCommand board only support the OLED display
+OLED 128x32, it uses the SPI bus. 
+Important: OLED display requires resistor position changes to enable SPI mode as per adafruit documentation 
+https://learn.adafruit.com/2-3-monochrome-128x32-oled-display-module/assembly-1):
 
-1) HD44870 LCD is the original LCD used in the MiniCommand and compatible with the LCD libraries.
-2) OLED 128x32 display is a new display of similar size but with the ability to display 4 lines of text and custom graphics, it uses the SPI bus. (OLED display requires resistor position changes to enable SPI mode as per adafruit documentation https://learn.adafruit.com/2-3-monochrome-128x32-oled-display-module/assembly-1):
+## Build Instructions
 
-## Build 
+The build is organised in to stages. You must follow the order sequentially.
+At the end of each stage there is a test checkpoint. It is important that you perform these tests to ensure
+each stage is working before proceeding to the next, failing to do so will make troubleshooting much harder.
+
 
 ```
 VERIFY CHIP ORIENTATION BEFORE SOLDERING.
@@ -117,9 +106,6 @@ Display must be installed last.
 
 The MIDI DIN ports get soldered on before the display
 
-For the 1_0_1 board: the DIN ports require that the 2 front legs are removed from each DIN connector (don't just cut the legs, pull the entire piece of aluminium out with a pair of pliers, this will prevent shorts with the display header). Once the MiDI DIN ports are in. The header for the HD44780 display is soldered from the display side of the board; the reverse side in which you would normally solder from is intentionally obstructed by the MIDI ports.
-This is not ideal, but was necessary due to the space limitations of the board.
-
 5) To install the male headers that connect to the MC to the ArduinoMega, insert the headers in to the ArduinoMega then solder with the arduino attached to the headers. This will ensure perfect alignment.
 ```
 
@@ -129,12 +115,6 @@ This is not ideal, but was necessary due to the space limitations of the board.
 1.0.2a:
 
 New stl files added (Thanks to Ozone)
-
-1.0.1a:
-
-The enclosure is based on a standard 1590BB guitar pedal enclousre.
-
-STL files for both the enclosure body and lid are provided in this git repository. The files can be 3D printed or you can investigate having an aluminium enclosure CNC milled.
 
 ## PCB Fabrication:
 [PCBWay.com fabrication options](https://github.com/jmamma/MegaCommand_Design/blob/master/pcb_fabrication_preferences.jpg)
