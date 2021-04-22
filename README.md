@@ -13,13 +13,11 @@ The printed cicuit board is a through-hole design (no SMD soldering skills requi
 * SD Card
 * 128KBytes of SRAM (0-63KB accessible natively, 64-128KB accessible with bank selection)
   RAM Distribution: 
+* 2 x 10pin Expansion ports
 
 Stack is 8KB in size. 
 
 56KB of RAM reserved for global objects, variables. (bank switchable)
-
-* 1 x Dual Channel 12bit DAC (1.0.1a only)
-* 2 x 10pin Expansion ports (1.0.2 only)
 
 The MIDICtrl20 framework respository contains the software component of this project.
 https://github.com/jmamma/MIDICtrl20_MegaCommand
