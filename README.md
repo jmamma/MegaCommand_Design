@@ -36,15 +36,16 @@ https://github.com/jmamma/MegaCommand_Design/blob/master/1_0_2/bill_of_materials
 
 ## Display
 
-OLED 128x32, it uses the SPI bus. 
+OLED 128x32, it uses the SPI bus.
+
 Important: OLED display requires resistor position changes to enable SPI mode as per adafruit documentation 
 https://learn.adafruit.com/2-3-monochrome-128x32-oled-display-module/assembly-1):
 
 ## Build Instructions
 
-The build is organised in to stages. You must follow the order sequentially.
+The build is organised in to multiple stages. You must follow the order sequentially.
 At the end of each stage there is a test checkpoint. It is important that you perform these tests to ensure
-each stage is working before proceeding to the next, failing to do so will make troubleshooting much harder.
+each stage is working before proceeding to the next, failing to do so will make troubleshooting any problems much harder.
 
 
 ```
@@ -139,7 +140,10 @@ Incorporating the differences between both processors and subsequent pin availab
 
 ## Arduino IDE, Cores & MIDICtrl library
 
-Once you've built a MegaCommand you can write sketches within the Arduino IDE to test the hardware and run custom firmwware.
+Once you've built a MegaCommand you can upload the latest version of the  MCL firmware located here: 
+https://github.com/jmamma/MIDICtrl20_MegaCommand/releases
+
+If you're familiar with coding you can write sketches within the Arduino IDE to test the hardware and run custom firmwware.
 Before you start coding you need to decide which core you are going to use.
 
 ## Arduino Cores
