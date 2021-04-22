@@ -42,6 +42,23 @@ OLED 128x32, it uses the SPI bus.
 Important: OLED display requires resistor position changes to enable SPI mode as per adafruit documentation 
 https://learn.adafruit.com/2-3-monochrome-128x32-oled-display-module/assembly-1):
 
+## PCB Fabrication:
+[PCBWay.com fabrication options](https://github.com/jmamma/MegaCommand_Design/blob/master/pcb_fabrication_preferences.jpg)
+
+Gerber files (pcb layout diagrams used for fabrication) are included in the ./gerber/ directory above.
+
+Download gerbers and submit to PCB manufacturer.
+
+Circuit Schematic and Board Layout is present in Eagle files.
+
+## Enclosure:
+
+1.0.2a:
+
+New stl files added (Thanks to Ozone). Use the "Tall" enclosure.
+
+https://github.com/jmamma/MegaCommand_Design/tree/master/Enclosure/OLED/tall
+
 ## Build Instructions
 
 The build is organised in to multiple stages. You must follow the order sequentially.
@@ -101,23 +118,6 @@ OLED Display must be installed last.
 
 5) To install the male headers that connect to the MegaCommand to the ArduinoMega, insert the headers in to the ArduinoMega then solder with the arduino attached to the headers. This will ensure perfect alignment.
 ```
-
-## Enclosure:
-
-1.0.2a:
-
-New stl files added (Thanks to Ozone). Use the "Tall" enclosure.
-
-https://github.com/jmamma/MegaCommand_Design/tree/master/Enclosure/OLED/tall
-
-## PCB Fabrication:
-[PCBWay.com fabrication options](https://github.com/jmamma/MegaCommand_Design/blob/master/pcb_fabrication_preferences.jpg)
-
-Gerber files (pcb layout diagrams used for fabrication) are included in the ./gerber/ directory above.
-
-Download gerbers and submit to PCB manufacturer.
-
-Circuit Schematic and Board Layout is present in Eagle files.
 
 ## Arduino IDE, Cores & MIDICtrl library
 
