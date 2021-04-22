@@ -9,7 +9,7 @@ The printed cicuit board is a through-hole design (no SMD soldering skills requi
 * 4 x MIDI ports (2 in, 2 out)
 * 4 x Rotary Encoders + Push button
 * 4 x Buttons
-* 1 x LCD display (Choose between OLED or LCD)
+* 1 x OLED display
 * SD Card
 * 128KBytes of SRAM (0-63KB accessible natively, 64-128KB accessible with bank selection)
   RAM Distribution: 
