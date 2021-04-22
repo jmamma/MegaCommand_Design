@@ -28,9 +28,7 @@ Board revision: 1_0_2a12
 
 __ALL INFORMATION BELOW IS PROVIDED AS A CONVENIENCE AND COULD BE SUBJECT TO ERROR OR CHANGE.__
 
-## Parts:
-
-[Bill of Materials]
+## Bill of Materials:
 
 1.0.2a:
 https://github.com/jmamma/MegaCommand_Design/blob/master/1_0_2/bill_of_materials
