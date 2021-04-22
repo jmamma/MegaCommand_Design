@@ -31,7 +31,7 @@ RESISTORS:
 
 2   10K                4609X-AP1-103LF         RPACK-BUSSED-8-SIP-PTH-8  R1, R2                                                  RESISTOR ARRAY
 2   1k                 271-1K-RC               METAL FILM 1%             R11, R12                                                RESISTOR                                                                                                                                            
-8   220                R-US_0207/7             METAL FILM 1%             R3, R4, R5, R6, R7, R8, R9, R10                         RESISTOR                                                                                                                                          
+8   220                271-220-RC              METAL FILM 1%             R3, R4, R5, R6, R7, R8, R9, R10                         RESISTOR                                                                                                                                          
 
 DIODES:
                                                                                                                                                            
@@ -44,18 +44,18 @@ OptoCoupler:
 
 ICs:
                                                                                
-1   74HC573N           74HC573N                DIL20                     IC1                                                     8-bit Octal D latch BUS DRIVER                                                                                                                                              
-2   74LS165N           74LS165N                DIL16                     IC2, IC3                                                8-bit Serial-Out, Shift Regster                                                                                                                                   
+1   74HC573N           SN74HC573AN             DIL20                     IC1                                                     8-bit Octal D latch BUS DRIVER                                                                                                                                              
+2   74LS165N           SN74LS165AN             DIL16                     IC2, IC3                                                8-bit Serial-Out, Shift Regster                                                                                                                                   
 1   AS6C1008-55PCN     AS6C1008-55PCN          128K SRAM                 U1                                                      SRAM  (1Mb, 2.7V-5.5V, 55ns 128K x 8bit Asynch SRAM)                                                   
 1   CD74HC4050E        CD74HC4050E             DIL16                     IC4  (DO NOT USE CD4050BE)                              Level Shifter 5V - >3.3V
 
 MIDI Jack:
                                                                                                                                 
-4   MIDIJACK           490-SDS-50              CP-2350                   U$7, U$8, U$9, U$10                                     DIN 5 pin socket also known as MIDI jack 
+4   MIDIJACK           490-SDS-50J             CP-2350                   U$7, U$8, U$9, U$10                                     DIN 5 pin socket also known as MIDI jack 
         
 Switches:
 
-1   EG1218             SWITCH-SPDTKIT          SWITCH-SPDT_KIT           S1                                                      POWER SWITCH
+1   EG1218             612-EG1218          SWITCH-SPDT_KIT           S1                                                      POWER SWITCH
 4   642-3FTH9          642-3FTH9               3FT                       BUTTON1, BUTTON2, BUTTON3, BUTTON4                      PUSH BUTTON SWITCHES                                                                                                                                                      
 4   642-1D09	 642-1D09                Apem                      Switch Bezels / Switch Caps Black 
 
