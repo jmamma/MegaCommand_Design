@@ -53,18 +53,17 @@ each stage is working before proceeding to the next, failing to do so will make 
 ```
 VERIFY CHIP ORIENTATION BEFORE SOLDERING.
 
-OLED/HD44780 display must be installed last.
+OLED display must be installed last.
 
 Take care in making sure the ICs are inserted the correct way around.
-
-You do not want to have to try and desolder 32 pins.
 
 ## Build Order: 
 
   1. ICS: RAM, Octal Latch, Shift Registers
   2. Arduino male headers. 
   3. Capacitors. (Make sure the 220uF electrolytic cap fits when the arduino is connected)
-
+                 (10uF +ve terminal is soldered to pad closest to SD card holder.
+                 
 TEST POINT: Run the SRAM firmware test.
 
   4. MEC switches (Make sure these sit completely flush with the board and are not leaning to one side)
@@ -80,16 +79,11 @@ TEST POINT: Run the button and encoder test firmware.
 TEST POINT: Run the MIDIPort test firmware.
 
  11. Power Jack (+9V tip)
- 12. SDCard headers (the female header is placed on the bottom side of the board, and the pins are soldered from the top side. Solder male headers to the sd-card breakout board)
-     (1_0_2 board can use the Yamaichi SD card holder and the above header is not required.)
+ 12. Yamaichi SD card holder.
      
 TEST POINT: Run the SDCARD test firmware
  
- HD44780:
- 13. Display header HD44780 (soldered from the top side of the board, the bottom side is intentionally obstructed by MIDI ports). There are 2 display header locations, one for each display type, choose the correct one.
- 14. Display HD44780 (Soldered to the display header once the header is installed, max height of display should be 1.5-2mm above mec switches (without switch cap).
- 
- OLED:
+OLED Display:
  13. Oled display requires correct resistor poisiton in order to be configured for SPI mode. (See documentation above to confirm the resistor placement)
  14. Male header to be soldered to OLED board. Header is then soldered on to MegaCommand PCB. The height of the OLED display is important. The distance between the mainboard pcb, and the bottom on the OLED pcb should be 5mm when soldered.
  
@@ -97,7 +91,7 @@ TEST POINT: Run the SDCARD test firmware
  
  16. Power switch. (optional, you can solder a short between the two right most pins on EG1212B  
  
- Expansion Headers (1_0_2 board only):
+ Expansion Headers:
  
  17. These are short 5mm headers. It might not be possible to buy them at the right length so you'll need to cut them down to 10 pin.
  
@@ -105,7 +99,7 @@ TEST POINT: Run the LCD and LED test firmware.
 
 ## Important
 
-Display must be installed last.
+OLED Display must be installed last.
 
 The MIDI DIN ports get soldered on before the display
 
@@ -114,10 +108,11 @@ The MIDI DIN ports get soldered on before the display
 
 ## Enclosure:
 
-
 1.0.2a:
 
-New stl files added (Thanks to Ozone)
+New stl files added (Thanks to Ozone). Use the "Tall" enclosure.
+
+https://github.com/jmamma/MegaCommand_Design/tree/master/Enclosure/OLED/tall
 
 ## PCB Fabrication:
 [PCBWay.com fabrication options](https://github.com/jmamma/MegaCommand_Design/blob/master/pcb_fabrication_preferences.jpg)
