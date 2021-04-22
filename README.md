@@ -72,7 +72,7 @@ TEST POINT: Run the SRAM firmware test.
   7. Encoders (Make sure these sit completely flush with the board and are not leaning to one side)  
   
 TEST POINT: Run the button and encoder test firmware.
-  8. ICS: MIDI Optocouplers, HEX buffer, DAC (1_0_1 board only) 
+  8. ICS: MIDI Optocouplers. 
   9. Resistors + diodes
 10. MIDI DIN ports. (1_0_1 board requires removal of the 2 front pins by pulling the entire piece of aluminum from the connector)
  
