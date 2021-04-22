@@ -127,19 +127,6 @@ https://github.com/jmamma/MIDICtrl20_MegaCommand/releases
 If you're familiar with coding you can write sketches within the Arduino IDE to test the hardware and run custom firmwware.
 Before you start coding you need to decide which core you are going to use.
 
-## MegaCommand vs MiniCommand:
-
-The MegaCommand shield was designed to be backwards compatible with the original MiniCommand hardware. 
-
-However, there are notable differences between the two systems, including new pin assignments which must be taken account for when using the original MidiCtrl libraries.
-
-The original MiniCommand used the ATMega64 microprocessor whilst the MegaCommand Shield is built on top of ArduinoMega which uses the ATMega2560 processor. The ATMega2560 shares most of the IO functionality of the ATMega64 but has additional pins, and a different pin-to-port layout.
-
-The MegaCommand Shield accesses the ATMega2560 processor on board the ArduinoMega through the exposed headers, not all pins on the ATMega2560 are exposed through this Arduino interface.
-
-Incorporating the differences between both processors and subsequent pin availability the following pin assignment has been made as the best possible substitutes for the original hardware layout.
-
-
 ## Arduino Cores
 In ArduinoLand, a Core is a collection of initialisation functions and associated libraries, used for configuring the underlying hardware; it is analogous to an Operating System kernel.
 
@@ -176,6 +163,19 @@ The default Arduino core is named "Arduino/Genuino Mega or Mega 2560"
 The MegaCommand core will be listed at the bottom. 
 
 ## MegaCommand vs MiniCommand
+
+```
+
+The MegaCommand shield was designed to be backwards compatible with the original MiniCommand hardware. 
+
+However, there are notable differences between the two systems, including new pin assignments which must be taken account for when using the original MidiCtrl libraries.
+
+The original MiniCommand used the ATMega64 microprocessor whilst the MegaCommand Shield is built on top of ArduinoMega which uses the ATMega2560 processor. The ATMega2560 shares most of the IO functionality of the ATMega64 but has additional pins, and a different pin-to-port layout.
+
+The MegaCommand Shield accesses the ATMega2560 processor on board the ArduinoMega through the exposed headers, not all pins on the ATMega2560 are exposed through this Arduino interface.
+
+Incorporating the differences between both processors and subsequent pin availability the following pin assignment has been made as the best possible substitutes for the original hardware layout.
+```
 ```
 4 Midi Ports vs 3
 256k ROM vs 64K
