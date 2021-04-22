@@ -67,33 +67,32 @@ Take care in making sure the ICs are inserted the correct way around.
 TEST POINT: Run the SRAM firmware test.
 
   4. MEC switches (Make sure these sit completely flush with the board and are not leaning to one side)
-  5. LCD Trimmer (1_0_1 board only only)
-  6. Resistor arrays
-  7. Encoders (Make sure these sit completely flush with the board and are not leaning to one side)  
+  5. Resistor arrays
+  6. Encoders (Make sure these sit completely flush with the board and are not leaning to one side)  
   
 TEST POINT: Run the button and encoder test firmware.
-  8. ICS: MIDI Optocouplers. 
-  9. Resistors + diodes
-10. MIDI DIN ports. (1_0_1 board requires removal of the 2 front pins by pulling the entire piece of aluminum from the connector)
+  7. ICS: MIDI Optocouplers. 
+  8. Resistors + diodes
+  9. MIDI DIN ports.
  
 TEST POINT: Insert SD Card, Run the MIDIPort test firmware.
 
- 11. Power Jack (+9V tip)
- 12. Yamaichi SD card holder.
+ 10. Power Jack (+9V tip)
+ 11. Yamaichi SD card holder.
      
 TEST POINT: Run the SDCARD test firmware
  
 OLED Display:
- 13. Oled display requires correct resistor poisiton in order to be configured for SPI mode. (See documentation above to confirm the resistor placement)
- 14. Male header to be soldered to OLED board. Header is then soldered on to MegaCommand PCB. The height of the OLED display is important. The distance between the mainboard pcb, and the bottom on the OLED pcb should be 5mm when soldered.
+ 12. Oled display requires correct resistor poisiton in order to be configured for SPI mode. (See documentation above to confirm the resistor placement)
+ 13. Male header to be soldered to OLED board. Header is then soldered on to MegaCommand PCB. The height of the OLED display is important. The distance between the mainboard pcb, and the bottom on the OLED pcb should be 5mm when soldered.
  
- 15. LEDs (+ anode pin nearest to the bottom of the board for both LEDs. ). When soldered, the tip of the LED should measure 11mm above mainboard pcb.
+ 14. LEDs (+ anode pin nearest to the bottom of the board for both LEDs. ). When soldered, the tip of the LED should measure 11mm above mainboard pcb.
  
- 16. Power switch. (optional, you can solder a short between the two right most pins on EG1212B  
+ 15. Power switch. (optional, you can solder a short between the two right most pins on EG1212B  
  
  Expansion Headers:
  
- 17. These are short 5mm headers. It might not be possible to buy them at the right length so you'll need to cut them down to 10 pin.
+ 16. These are short 5mm headers. It might not be possible to buy them at the right length so you'll need to cut them down to 10 pin.
  
 TEST POINT: Run the LCD and LED test firmware.
 
@@ -101,9 +100,7 @@ TEST POINT: Run the LCD and LED test firmware.
 
 OLED Display must be installed last.
 
-The MIDI DIN ports get soldered on before the display
-
-5) To install the male headers that connect to the MC to the ArduinoMega, insert the headers in to the ArduinoMega then solder with the arduino attached to the headers. This will ensure perfect alignment.
+5) To install the male headers that connect to the MegaCommand to the ArduinoMega, insert the headers in to the ArduinoMega then solder with the arduino attached to the headers. This will ensure perfect alignment.
 ```
 
 ## Enclosure:
