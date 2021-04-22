@@ -120,7 +120,7 @@ OLED Display must be installed last.
 5) To install the male headers that connect to the MegaCommand to the ArduinoMega, insert the headers in to the ArduinoMega then solder with the arduino attached to the headers. This will ensure perfect alignment.
 ```
 
-## Arduino IDE, Cores & MIDICtrl library
+## Firmware
 
 Once you've built a MegaCommand you can upload the latest version of the  MCL firmware located here: 
 https://github.com/jmamma/MIDICtrl20_MegaCommand/releases
