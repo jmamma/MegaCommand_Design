@@ -76,7 +76,7 @@ TEST POINT: Run the button and encoder test firmware.
   9. Resistors + diodes
 10. MIDI DIN ports. (1_0_1 board requires removal of the 2 front pins by pulling the entire piece of aluminum from the connector)
  
-TEST POINT: Run the MIDIPort test firmware.
+TEST POINT: Insert SD Card, Run the MIDIPort test firmware.
 
  11. Power Jack (+9V tip)
  12. Yamaichi SD card holder.
