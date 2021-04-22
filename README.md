@@ -119,7 +119,15 @@ Download gerbers and submit to PCB manufacturer.
 
 Circuit Schematic and Board Layout is present in Eagle files.
 
-## About:
+## Arduino IDE, Cores & MIDICtrl library
+
+Once you've built a MegaCommand you can upload the latest version of the  MCL firmware located here: 
+https://github.com/jmamma/MIDICtrl20_MegaCommand/releases
+
+If you're familiar with coding you can write sketches within the Arduino IDE to test the hardware and run custom firmwware.
+Before you start coding you need to decide which core you are going to use.
+
+## MegaCommand vs MiniCommand:
 
 The MegaCommand shield was designed to be backwards compatible with the original MiniCommand hardware. 
 
@@ -131,13 +139,6 @@ The MegaCommand Shield accesses the ATMega2560 processor on board the ArduinoMeg
 
 Incorporating the differences between both processors and subsequent pin availability the following pin assignment has been made as the best possible substitutes for the original hardware layout.
 
-## Arduino IDE, Cores & MIDICtrl library
-
-Once you've built a MegaCommand you can upload the latest version of the  MCL firmware located here: 
-https://github.com/jmamma/MIDICtrl20_MegaCommand/releases
-
-If you're familiar with coding you can write sketches within the Arduino IDE to test the hardware and run custom firmwware.
-Before you start coding you need to decide which core you are going to use.
 
 ## Arduino Cores
 In ArduinoLand, a Core is a collection of initialisation functions and associated libraries, used for configuring the underlying hardware; it is analogous to an Operating System kernel.
