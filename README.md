@@ -164,8 +164,6 @@ The MegaCommand core will be listed at the bottom.
 
 ## MegaCommand vs MiniCommand
 
-```
-
 The MegaCommand shield was designed to be backwards compatible with the original MiniCommand hardware. 
 
 However, there are notable differences between the two systems, including new pin assignments which must be taken account for when using the original MidiCtrl libraries.
@@ -175,7 +173,7 @@ The original MiniCommand used the ATMega64 microprocessor whilst the MegaCommand
 The MegaCommand Shield accesses the ATMega2560 processor on board the ArduinoMega through the exposed headers, not all pins on the ATMega2560 are exposed through this Arduino interface.
 
 Incorporating the differences between both processors and subsequent pin availability the following pin assignment has been made as the best possible substitutes for the original hardware layout.
-```
+
 ```
 4 Midi Ports vs 3
 256k ROM vs 64K
