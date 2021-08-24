@@ -2,7 +2,8 @@
 
 ## Description:
 
-The MegaCommand is an open-source Arduino Mega MIDI shield that is designed to run the MCL firmware for use with the Elektron Machinedrum.
+The MegaCommand is an open-source MIDI controller is designed to run the MCL firmware for use with the Elektron Machinedrum.
+It is is based around the Arduino Mega 2560.
 
 The printed cicuit board is a through-hole design (no SMD soldering skills required). 
 
