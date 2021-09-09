@@ -1,7 +1,7 @@
 //MegaCommand SRAM Test Firmware
-//Version 1.0
+//Version 1.1
 //Author: Justin Mammarella
-//Date: Sept 2017
+//Date: Sept 2021
 //Description: Firmware to test the external SRAM by copying randomized data between banks then comparing reads.
 //             Run this firmware by uploading to the MegaCommand and then viewing the output of Serial Monitor at 9600bps
 //             The test will take about 5 minutes to run.
@@ -10,39 +10,55 @@
 #define BANK_SELECT 43
 #define RANDOM_SEED 123456789
 
-
 void select_bank(uint8_t bank) {
-     if (bank == 0) {
-     digitalWrite(BANK_SELECT, LOW);    }
-    if (bank == 1) {
-     digitalWrite(BANK_SELECT, HIGH); 
-    }
+  if (bank == 0) {
+    digitalWrite(BANK_SELECT, LOW);
+  }
+  if (bank == 1) {
+    digitalWrite(BANK_SELECT, HIGH);
+  }
 }
 
 void setup() {
   randomSeed(RANDOM_SEED);
-  
+
   Serial.begin(9600);
   Serial.println("MegaCommand SRAM Test");
 
   XMCRA = _BV(SRE); //ENABLE MEM
-  
-  pinMode(43, OUTPUT);
-  select_bank(0);
-    char hex[4];
 
-  volatile uint8_t *ptr;      
+  pinMode(43, OUTPUT);
+  select_bank(1);
+  char hex[4];
+
+  volatile uint8_t *ptr;
   uint8_t myrandom = 0;
   uint8_t random_number, read_bank0, read_bank1;
+
+
+  for (ptr = reinterpret_cast<uint8_t *> (0x2200); ptr < reinterpret_cast<uint8_t *> (0xFFFF); ptr++) {
+    *ptr = myrandom++;
+  }
+
+  myrandom = 0;
+  for (ptr = reinterpret_cast<uint8_t *> (0x2200); ptr < reinterpret_cast<uint8_t *> (0xFFFF); ptr++) {
+    read_bank0 = *ptr;
+    if (read_bank0 != myrandom) {
+      sprintf(hex, "%04X", ptr);
+      Serial.println("\nFailed Test 1:");
+      Serial.print(hex); Serial.print(" ");
+      Serial.print(read_bank0); Serial.print(" ");
+      Serial.println(myrandom);
+      return;
+    }
+    myrandom++;
+  }
+
   for (ptr = reinterpret_cast<uint8_t *> (0x2200); ptr < reinterpret_cast<uint8_t *> (0xFFFF); ptr++) {
     sprintf(hex, "%04X", ptr);
-
-//  Serial.println("\nTesting Address ");
-  Serial.println(hex);
-
     select_bank(0);
     //Generate random number, store in stack
-    random_number = random(1,255);
+    random_number = random(1, 255);
     //Copy random number to bank0 mem location
     *ptr = random_number;
     //Read back the random number
@@ -54,26 +70,26 @@ void setup() {
     *ptr = read_bank0;
     //Read back bank1 write
     read_bank1 = *ptr;
-       //     Serial.println(random_number);
+    //     Serial.println(random_number);
 
-       // Serial.println(read_bank0);
-       // Serial.println(read_bank1);
+    // Serial.println(read_bank0);
+    // Serial.println(read_bank1);
     if ((read_bank0 == 0) || (read_bank1 == 0))  {
-        Serial.println("\nFailed bank0 zero reading");
-     Serial.println(hex);
-     return;
+      Serial.println("\nFailed bank0 zero reading");
+      Serial.println(hex);
+      return;
     }
     if (read_bank0 != random_number) {
-     Serial.println("\nSRAM Test Failed bank0 mismatch ");
-     Serial.println(hex);
-     return;
+      Serial.println("\nSRAM Test Failed bank0 mismatch ");
+      Serial.println(hex);
+      return;
 
     }
     if (read_bank1 != random_number) {
-     Serial.println("\nSRAM Test Failed bank1 mismatch");
-     Serial.println(hex);
+      Serial.println("\nSRAM Test Failed bank1 mismatch");
+      Serial.println(hex);
 
-    return;
+      return;
     }
   }
 
