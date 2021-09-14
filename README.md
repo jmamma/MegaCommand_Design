@@ -20,8 +20,8 @@ Stack is 8KB in size.
 
 56KB of RAM reserved for global objects, variables. (bank switchable)
 
-The MIDICtrl20 framework respository contains the software component of this project.
-https://github.com/jmamma/MIDICtrl20_MegaCommand
+The MCL respository contains the software component of this project.
+https://github.com/jmamma/MCL
 
 ## Project Status:
 
