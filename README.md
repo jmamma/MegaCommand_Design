@@ -13,11 +13,9 @@ The printed cicuit board is a through-hole design (no SMD soldering skills requi
 * 1 x OLED display
 * SD Card
 * 128KBytes of SRAM (0-63KB accessible natively, 64-128KB accessible with bank selection)
-  RAM Distribution: 
 * 2 x 10pin Expansion ports
 
 Stack is 8KB in size. 
-
 56KB of RAM reserved for global objects, variables. (bank switchable)
 
 The MCL respository contains the software component of this project.
