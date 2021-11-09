@@ -128,20 +128,20 @@ If you're familiar with coding you can write sketches within the Arduino IDE to 
 Before you start coding you need to decide which core you are going to use.
 
 ## Arduino Cores
-In ArduinoLand, a Core is a collection of initialisation functions and associated libraries, used for configuring the underlying hardware; it is analogous to an Operating System kernel.
+In ArduinoIDE, a Core is a collection of initialisation functions and associated libraries, used for configuring the underlying hardware; it is analogous to an Operating System kernel.
 
-There are two cores to keep in mind:
+The cores availabile in the Arduino IDE are listed under Tools -> Boards.
 
-Arduino Core:
+Arduino Mega or Mega 2560:
 
-This is the standard core, that comes installed default with the Arduino IDE. If you use this core with the MegaCommand you can program the MegaCommand like an ordinary arduino shield. The built in arduino functions can be used to control the hardware using the pin assignement detailed below.
+This is the standard core that comes installed default with the Arduino IDE. If you use this core with the MegaCommand you can program the MegaCommand like an ordinary arduino shield. The built in arduino functions can be used to control the hardware using the pin assignement detailed below.
 
-MegaCommand Core:
+MCL Core:
 
-This is based on Wesen's core for the MiniCommand and allows the MIDICtrl framework to run on the ArduinoMega.
+This was built on top of Manuel Odendahl's core for the MiniCommand.
 By using this core you can take advantage of the powerful MIDI libraries and GUI functionality.
 
-For example, the MegaCommand core is necessary for running the MCL firmware and controlling the Elektron instrument range.
+For example, the MegaCommand core is necessary for running the MCL firmware, and controlling the Elektron instrument range.
 
 
 ### Installing the MIDICtrl core.
@@ -152,7 +152,7 @@ For example, the MegaCommand core is necessary for running the MCL firmware and 
 2) Get the MIDICtrl library and MegaCommand Core (same repo):
 ```
    cd /Applications/Arduino.app/Contents/Java/hardware/
-   git clone https://github.com/jmamma/MIDICtrl20_MegaCommand
+   git clone https://github.com/jmamma/MCL
 ```
 ### Selecting the Core
 
