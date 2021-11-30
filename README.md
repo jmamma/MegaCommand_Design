@@ -55,7 +55,9 @@ Circuit Schematic and Board Layout is present in Eagle files.
 
 1.0.2a:
 
-New stl files added (Thanks to Ozone). Use the "Tall" enclosure.
+New stl files added (Thanks to Ozone). Use the "Tall" enclosure. Optionally
+print 4 spacers and superglue to the screw holes on the OLED to ease
+installation of the screen at the proper height.
 
 https://github.com/jmamma/MegaCommand_Design/tree/master/Enclosure/OLED/tall
 
