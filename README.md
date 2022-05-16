@@ -16,7 +16,7 @@ The printed cicuit board is a through-hole design (no SMD soldering skills requi
 * 2 x 10pin Expansion ports
 
 Stack is 8KB in size. 
-56KB of RAM reserved for global objects, variables. (bank switchable)
+56KB of SRAM reserved for global objects, variables. (bank switchable)
 
 The MCL respository contains the software component of this project.
 https://github.com/jmamma/MCL
@@ -124,7 +124,7 @@ OLED Display must be installed last.
 ## Firmware
 
 Once you've built a MegaCommand you can upload the latest version of the  MCL firmware located here: 
-https://github.com/jmamma/MIDICtrl20_MegaCommand/releases
+https://github.com/jmamma/MCL/releases
 
 If you're familiar with coding you can write sketches within the Arduino IDE to test the hardware and run custom firmwware.
 Before you start coding you need to decide which core you are going to use.
@@ -146,7 +146,7 @@ By using this core you can take advantage of the powerful MIDI libraries and GUI
 For example, the MegaCommand core is necessary for running the MCL firmware, and controlling the Elektron instrument range.
 
 
-### Installing the MIDICtrl core.
+### Installing the MCL core.
 (Instructions for OSX, should be similar for Windows)
 
 1) Download the Arduino IDE https://www.arduino.cc/en/Main/Software (1.8.5 tested)
