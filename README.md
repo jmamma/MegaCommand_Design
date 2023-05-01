@@ -55,11 +55,12 @@ Circuit Schematic and Board Layout is present in Eagle files.
 
 1.0.2a:
 
-New stl files added (Thanks to Ozone). Use the "Tall" enclosure. Optionally
-print 4 spacers and superglue to the screw holes on the OLED to ease
-installation of the screen at the proper height.
+The enclosure can be 3D printed. The design files and variations are located in:
 
-https://github.com/jmamma/MegaCommand_Design/tree/master/Enclosure/OLED/tall
+https://github.com/jmamma/MegaCommand_Design/tree/master/Enclosure/OLED/3D
+
+Optionally print 4 spacers and superglue to the screw holes on the OLED to ease
+installation of the screen at the proper height.
 
 ## Build Instructions
 
