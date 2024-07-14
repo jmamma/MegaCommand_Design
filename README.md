@@ -94,12 +94,12 @@ TEST POINT: Run the button and encoder test firmware.
   8. Resistors + diodes
   9. MIDI DIN ports.
  
-TEST POINT: Insert SD Card, Run the MIDIPort test firmware.
+TEST POINT: Run the MIDIPort test firmware.
 
  10. Power Jack (+9V tip)
  11. Yamaichi SD card holder.
      
-TEST POINT: Run the SDCARD test firmware
+TEST POINT: Insert SD Card, Run the SDCARD test firmware
  
 OLED Display:
  12. Oled display requires correct resistor poisiton in order to be configured for SPI mode. (See documentation above to confirm the resistor placement)
